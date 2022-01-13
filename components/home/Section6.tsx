@@ -47,7 +47,7 @@ const Section6: NextPage = () => {
               <div className='text-lg text-[#12161a] font-medium leading-[1.6]'>
                 최고 수준의 보험 보장
               </div>
-              <div className='text-[#292e33] leading-[1.6] mt-5 mb-[6.26rem] sm:mb-14'>
+              <div className='text-[#292e33] leading-[1.6] mt-5 mb-[4.63rem] sm:mb-14'>
                 보장되는 보험범위를 기술합니다.
                 <br />
                 보장되는 보험범위를 기술합니다.
