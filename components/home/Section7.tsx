@@ -3,18 +3,19 @@ import Image from 'next/image';
 
 const Section7: NextPage = () => {
   return (
-    <div className='relative flex-center-start w-screen h-[60rem]'>
+    <div className='relative flex-center-start w-screen h-[60rem] sm:h-[35rem]'>
       <Image
         src='/home/section7-1.png'
         alt='Home Section7 Image1'
         layout='fill'
         objectFit='cover'
       />
-      <div className='absolute top-10 w-full max-w-[1180px]'>
-        <h1 className='text-[#12161a] text-4xl font-bold leading-[1.5]'>
-          지금도 디지털 자산의 경계선을
-          <br />
-          지우고 있습니다.
+      <div className='absolute top-10 w-full max-w-[1180px] sm:max-w-[330px] sm:top-0'>
+        <h1 className='text-[#12161a] text-4xl font-bold leading-[1.5] sm:text-3xl sm:leading-[1.5]'>
+          지금도 디지털 자산의 <br className='hidden sm:block' />
+          경계선을 <br className='sm:hidden' />
+          지우고 <br className='hidden sm:block' />
+          있습니다.
         </h1>
         <div className='text-[#292e33] text[1.375rem] leading-[1.6] mt-7 mb-20'>
           그라운드엑스가 지워가는 수많은 경계선들,

@@ -15,7 +15,7 @@ export default function Header() {
           opacity: `${scrollRatio > 95 ? (115 - scrollRatio) / 40 : 1}`,
         }}
       >
-        <div className='flex-between-center w-full max-w-[1180px] z-[9999]'>
+        <div className='flex-between-center w-full max-w-[1180px] z-[9999] sm:max-w-[330px]'>
           <div className='relative w-[7.5rem] h-8'>
             <Image
               src='/logo-dark.png'
@@ -26,7 +26,7 @@ export default function Header() {
             />
           </div>
 
-          <div className='flex text-white font-medium space-x-12'>
+          <div className='flex text-white font-medium space-x-12 sm:hidden'>
             <div className='hover:opacity-80 transition-all cursor-pointer'>
               채용 공고
             </div>
@@ -44,7 +44,7 @@ export default function Header() {
       {scrollRatio >= 115 && (
         <div className='fixed top-0 left-0 flex-center-start w-screen py-4 bg-white z-[9999] border-b border-[#d1d1d1]'>
           <div className='flex-between-center w-full max-w-[1180px] z-[9999]'>
-            <div className='relative w-[7.5rem] h-8'>
+            <div className='relative w-[7.5rem] h-8 sm:ml-5'>
               <Image
                 src='/logo.png'
                 alt='Header Logo'
@@ -54,7 +54,7 @@ export default function Header() {
               />
             </div>
 
-            <div className='flex text-[#12161a] font-medium space-x-12'>
+            <div className='flex text-[#12161a] font-medium space-x-12 sm:hidden'>
               <div className='hover:opacity-80 transition-all cursor-pointer'>
                 채용 공고
               </div>

@@ -5,25 +5,27 @@ import { BsArrowRight } from 'react-icons/bs';
 const Section5: NextPage = () => {
   return (
     <>
-      <div className='relative w-full h-[28.75rem]'>
+      <div className='relative w-full h-[28.75rem] sm:h-52'>
         <Image
           src='/home/section5-1.png'
           alt='Home Section5 Image1'
           layout='fill'
           objectFit='cover'
-          className='!px-[6.25rem]'
+          className='!px-[6.25rem] sm:!px-2'
         />
       </div>
       <div className='flex-center-start w-screen'>
-        <div className='w-full max-w-[1180px]'>
-          <h1 className='text-[#12161a] text-4xl font-medium leading-[1.5] mt-[11.25rem]'>
-            우리는 이렇게 경계선을 지웁니다.
+        <div className='w-full max-w-[1180px] sm:max-w-[330px]'>
+          <h1 className='text-[#12161a] text-4xl font-medium leading-[1.5] mt-[11.25rem] sm:text-2xl sm:leading-[1.5] sm:mt-24'>
+            우리는 이렇게 <br className='hidden sm:block' />
+            경계선을 지웁니다.
             <br />
-            여정에 합류할 동료를 찾고 있습니다.
+            여정에 합류할 <br className='hidden sm:block' />
+            동료를 찾고 있습니다.
           </h1>
 
-          <div className='flex-between-center space-x-10 mt-[6.25rem] mb-[13.75rem]'>
-            <div className='w-1/3 cursor-pointer group'>
+          <div className='flex-between-center space-x-10 mt-[6.25rem] mb-[13.75rem] sm:mt-16 sm:flex-col sm:space-x-0 sm:space-y-10 sm:mb-16'>
+            <div className='w-1/3 cursor-pointer group sm:w-full'>
               <div className='relative w-[98%] aspect-square rounded-xl overflow-hidden group-hover:w-full transition-all '>
                 <Image
                   src='/home/section5-2.png'
@@ -50,7 +52,7 @@ const Section5: NextPage = () => {
               </div>
             </div>
 
-            <div className='w-1/3 cursor-pointer group'>
+            <div className='w-1/3 cursor-pointer group sm:w-full'>
               <div className='relative w-[99%] aspect-square rounded-xl overflow-hidden group-hover:w-full transition-all '>
                 <Image
                   src='/home/section5-3.png'
@@ -77,7 +79,7 @@ const Section5: NextPage = () => {
               </div>
             </div>
 
-            <div className='w-1/3 cursor-pointer group'>
+            <div className='w-1/3 cursor-pointer group sm:w-full'>
               <div className='relative w-[98%] aspect-square rounded-xl overflow-hidden group-hover:w-full transition-all '>
                 <Image
                   src='/home/section5-4.png'

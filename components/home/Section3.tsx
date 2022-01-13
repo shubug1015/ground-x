@@ -12,7 +12,7 @@ const Section3: NextPage = () => {
       <div
         className={
           className +
-          ' absolute z-[1] !left-[calc((100vw-1180px)/2)] !top-[23rem] w-6 h-6 !text-xl !text-[#4f5861] before:hidden'
+          ' absolute z-[1] !left-[calc((100vw-1180px)/2)] !top-[23rem] w-6 h-6 !text-xl !text-[#4f5861] before:hidden sm:!left-[calc((100vw-330px)/2)] sm:!top-[20rem]'
         }
         onClick={onClick}
       >
@@ -28,7 +28,7 @@ const Section3: NextPage = () => {
         <div
           className={
             className +
-            ' absolute z-[1] !left-[calc((100vw-1180px)/2+70px)] !top-[23rem] w-6 h-6 !text-xl !text-[#4f5861] before:hidden'
+            ' absolute z-[1] !left-[calc((100vw-1180px)/2+70px)] !top-[23rem] w-6 h-6 !text-xl !text-[#4f5861] before:hidden sm:!left-[calc((100vw-330px)/2+50px)] sm:!top-[20rem]'
           }
           onClick={onClick}
         >
@@ -54,9 +54,9 @@ const Section3: NextPage = () => {
         {[1, 2].map((i, index) => (
           <div
             key={index}
-            className='!flex justify-center items-center w-screen h-[28.75rem] bg-[#f0f2f5]'
+            className='!flex justify-center items-center w-screen h-[28.75rem] bg-[#f0f2f5] sm:h-96'
           >
-            <div className='w-full max-w-[1180px] text-[#4f5861]'>
+            <div className='w-full max-w-[1180px] text-[#4f5861] sm:max-w-[330px]'>
               <h1 className='text-2xl font-bold'>
                 Lorem ipsum dolor sit amet,
                 <br />
