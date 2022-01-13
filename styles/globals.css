@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flex-center-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-between-center {
+    @apply flex justify-between items-center;
+  }
+  .flex-center-start {
+    @apply flex justify-center items-start;
+  }
+  .flex-end-start {
+    @apply flex justify-end items-start;
+  }
+  .flex-between-start {
+    @apply flex justify-between items-start;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+} */
