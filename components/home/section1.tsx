@@ -1,5 +1,4 @@
 import { useScroll } from '@libs/useScroll';
-import { cls } from '@libs/utils';
 import type { NextPage } from 'next';
 import Image from 'next/image';
 // import { useEffect, useRef, useState } from 'react';
@@ -9,14 +8,11 @@ const Section1: NextPage = () => {
 
   return (
     <div
-      className={cls(
-        y > 10 ? '-top-[500px] opacity-0' : '',
-        'absolute top-0 left-0 flex justify-center items-center w-screen h-screen z-10 transition-all duration-700'
-      )}
-      // style={{
-      //   top: y > 465 ? -465 : -y,
-      //   opacity: y > 465 ? 0 : y === 0 ? 1 : (460 - y) / 560,
-      // }}
+      className='absolute top-0 left-0 flex justify-center items-center w-screen h-screen z-10'
+      style={{
+        top: y > 465 ? -465 : -y,
+        opacity: y > 465 ? 0 : y === 0 ? 1 : (460 - y) / 560,
+      }}
       // className='relative flex justify-center items-center w-screen h-screen'
     >
       {/* Background Image */}
