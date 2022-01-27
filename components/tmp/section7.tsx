@@ -5,7 +5,7 @@ const Section7: NextPage = () => {
   return (
     <div className='relative flex-center-start w-screen h-[60rem] sm:h-[35rem]'>
       <Image
-        src='/home/section7-1.png'
+        src='/tmp/section7-1.png'
         alt='Home Section7 Image1'
         layout='fill'
         objectFit='cover'

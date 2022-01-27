@@ -20,6 +20,7 @@
     "paths": {
       "@components/*": ["components/*"],
       "@layout/*": ["layout/*"],
+      "@libs/*": ["libs/*"],
       "@utils/*": ["utils/*"]
     }
   },
