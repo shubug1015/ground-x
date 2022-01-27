@@ -83,9 +83,7 @@ const Section3: NextPage = () => {
                 <div className='w-1/2'>
                   <div>
                     <h1 className='text-[24px] font-medium leading-[1.6]'>
-                      그라운드X는 성장하고자 하는 의지가 높은
-                      <br />
-                      크루들의 집합입니다.
+                      그라운드엑스는 성장 의지가 강한 크루들이 모여있습니다.
                     </h1>
                     <div className='text-[18px] leading-[1.67] mt-[18px]'>
                       또한 다양한 산업군에서 전문성을 갖고 합류한 구성원들이
