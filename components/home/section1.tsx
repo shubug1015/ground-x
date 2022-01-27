@@ -11,7 +11,7 @@ const Section1: NextPage = () => {
       className='absolute top-0 left-0 flex justify-center items-center w-screen h-screen z-10'
       style={{
         top: -y,
-        // opacity: (460 - y) / 460,
+        opacity: (460 - y) / 460,
       }}
       // className='relative flex justify-center items-center w-screen h-screen'
     >
@@ -23,6 +23,7 @@ const Section1: NextPage = () => {
             alt='Main Background Image'
             layout='fill'
             objectFit='cover'
+            priority
           />
         </div>
       </div>

@@ -12,6 +12,7 @@ const Section2: NextPage = () => {
             alt='Section2 Background Image'
             layout='fill'
             objectFit='cover'
+            priority
           />
         </div>
       </div>
