@@ -91,7 +91,7 @@ const Section4: NextPage = () => {
                 <br />
                 있는 서비스입니다.
               </div>
-              <div className='flex justify-between items-center px-[20px] border border-[#ffffff] w-full h-[52px] mt-[82px] z-[1] cursor-pointer'>
+              <div className='flex justify-between items-center px-[20px] border border-[#ffffff] w-full h-[52px] mt-[108px] z-[1] cursor-pointer'>
                 <div className='text-white text-[14px]'>
                   Klip 지갑 소개 페이지
                 </div>

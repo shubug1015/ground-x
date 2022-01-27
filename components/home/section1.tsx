@@ -1,36 +1,42 @@
 import { useScroll } from '@libs/useScroll';
 import type { NextPage } from 'next';
 import Image from 'next/image';
-// import { cls } from '@libs/utils';
-// import { useEffect, useState, WheelEvent } from 'react';
+import { useEffect, useRef } from 'react';
 
 const Section1: NextPage = () => {
-  // const [initialScroll, setInitialScroll] = useState(true);
-
-  // const handleWheel = (e: WheelEvent) => {
-  //   const body: any = document.querySelector('body');
-
-  //   if (initialScroll && e.deltaY > 0) {
-  //     setInitialScroll(false);
-  //     setTimeout(() => (body.style.overflowY = 'scroll'), 1000);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   const body: any = document.querySelector('body');
-
-  //   body.style.overflowY = 'hidden';
-  // }, []);
-
   const { y } = useScroll();
+
+  const typingTextRef = useRef<any>(null);
+
+  let i = 0;
+
+  useEffect(() => {
+    let typingText = typingTextRef.current.innerText;
+    let speed = 100;
+    let flag = 0;
+
+    function typeWriter() {
+      if (flag == 0) {
+        if (i == typingText.length) {
+          flag = 1;
+        }
+        typingText += typingText.charAt(i);
+        i++;
+      }
+      if (flag == 1) {
+        if (i == 0) {
+          flag = 0;
+        }
+        typingText = typingText.slice(0, i);
+        i--;
+      }
+    }
+
+    setInterval(typeWriter, speed);
+  }, [i]);
 
   return (
     <div
-      // onWheel={handleWheel}
-      // className={cls(
-      //   initialScroll ? 'top-0' : '-top-[100vh]',
-      //   'absolute left-0 flex justify-center items-center w-screen h-screen z-10 transition-all duration-1000'
-      // )}
       className='absolute left-0 flex justify-center items-center w-screen h-screen z-10'
       style={{
         top: -y,
@@ -52,7 +58,7 @@ const Section1: NextPage = () => {
       {/* Text */}
       <div className='text-white z-[1]'>
         <h1 className='font-bold text-[68px] text-center'>
-          누구나 크리에이터가 되는 세상
+          누구나 <span ref={typingTextRef}>크리에이터</span>가 되는 세상
         </h1>
         <h2 className='font-medium text-[38px] text-center mt-[40px]'>
           그라운드엑스가 NFT로 새로운 디지털 세상을 만들어갑니다.
