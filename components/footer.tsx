@@ -14,8 +14,14 @@ export default function Footer() {
           Mail : contact@groundx.xyz
         </div>
 
-        <div className='text-[#6c7680] mt-[28px] mb-10 sm:text-sm'>
-          © 그라운드X
+        <div className='flex justify-between items-center'>
+          <div className='text-[#6c7680] mt-[28px] mb-10 sm:text-sm'>
+            ©GroundX Corp. All rights reserved.
+          </div>
+
+          <div className='relative w-[105px] h-[20px]'>
+            <Image src='/footer/kakao.png' alt='Kakao Logo' layout='fill' />
+          </div>
         </div>
       </div>
     </div>

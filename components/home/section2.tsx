@@ -3,12 +3,12 @@ import Image from 'next/image';
 
 const Section2: NextPage = () => {
   return (
-    <div className='relative flex justify-center items-start w-screen h-[2840px]'>
+    <div className='relative mt-[500px] flex justify-center items-start w-screen h-[2840px]'>
       {/* Background Image */}
       <div className='absolute top-0 left-0 w-full h-full'>
         <div className='relative w-full h-full'>
           <Image
-            src='/home/section2/background1.png'
+            src='/home/section2/background.png'
             alt='Section2 Background Image'
             layout='fill'
           />
@@ -16,8 +16,9 @@ const Section2: NextPage = () => {
       </div>
 
       <div className='w-[1180px] z-[1]'>
+        {/* Title */}
         <h1 className='text-center text-[28px] font-medium leading-[1.6] mt-[200px]'>
-          블록체인을 통해 당신의 창의성에 가치를 발견하고,
+          블록체인으로 당신의 창의성에 가치를 더하고,
           <br />
           디지털과 아날로그의 경계를 넘나들며,
           <br />
@@ -25,6 +26,7 @@ const Section2: NextPage = () => {
           <br />더 나은 세상을 만들어갑니다.
         </h1>
 
+        {/* Section1 */}
         <div className='flex items-center w-full mt-[1021.4px]'>
           <div className='w-1/2'>
             <div className='relative w-[419px] h-[417px]'>
@@ -45,22 +47,22 @@ const Section2: NextPage = () => {
               </h2>
               <div className='text-[18px] leading-[1.67] mt-[40px]'>
                 그라운드엑스가 꿈꾸는 더 나은 세상이란 디지털 소유권을 기반으로
-                누구
                 <br />
-                나 크리에이터가 되는 세상입니다. 새로워진 고객 경험으로 디지털
-                산업
+                누구나 크리에이터가 되는 세상입니다. 새로워진 고객 경험으로
+                디지털
                 <br />
-                뿐만 아니라 모든 산업에서 보다 많은 기회가 제공될 것입니다.
-                이러한 세
+                산업뿐만 아니라 모든 산업에서 보다 많은 기회가 제공될 것입니다.
                 <br />
-                상을 만들기 위해 그라운드엑스는 가장 대중적이며 신뢰할 수 있는
-                블록체
-                <br />인 기술 기업이 되고자 합니다.
+                이러한 세상을 만들기 위해 그라운드엑스는 가장 대중적이며 신뢰할
+                수
+                <br />
+                있는 블록체인 기술 기업이 되고자 합니다.
               </div>
             </div>
           </div>
         </div>
 
+        {/* Section2 */}
         <div className='flex items-center w-full mt-[346px]'>
           <div className='w-1/2 text-white'>
             <div>
@@ -73,11 +75,11 @@ const Section2: NextPage = () => {
               </h2>
               <div className='text-[18px] leading-[1.67] mt-[40px]'>
                 그라운드엑스는 블록체인으로 디지털 자산의 경계선을 지워 가고
-                있습니
                 <br />
-                다. 세대와 문화의 구분 없이 누구나 받아들일 수 있는 가장
-                안전하고 신뢰
-                <br />할 수 있는 디지털 자산 경험을 제공합니다.
+                있습니다. 세대와 문화의 구분 없이 누구나 받아들일 수 있는 가장
+                안전하고
+                <br />
+                신뢰할 수 있는 디지털 자산 경험을 제공합니다.
               </div>
             </div>
           </div>

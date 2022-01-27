@@ -1,9 +1,43 @@
+import { useScroll } from '@libs/useScroll';
 import type { NextPage } from 'next';
 import Image from 'next/image';
+// import { cls } from '@libs/utils';
+// import { useEffect, useState, WheelEvent } from 'react';
 
 const Section1: NextPage = () => {
+  // const [initialScroll, setInitialScroll] = useState(true);
+
+  // const handleWheel = (e: WheelEvent) => {
+  //   const body: any = document.querySelector('body');
+
+  //   if (initialScroll && e.deltaY > 0) {
+  //     setInitialScroll(false);
+  //     setTimeout(() => (body.style.overflowY = 'scroll'), 1000);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   const body: any = document.querySelector('body');
+
+  //   body.style.overflowY = 'hidden';
+  // }, []);
+
+  const { y } = useScroll();
+
   return (
-    <div className='relative flex justify-center items-center w-screen h-screen'>
+    <div
+      // onWheel={handleWheel}
+      // className={cls(
+      //   initialScroll ? 'top-0' : '-top-[100vh]',
+      //   'absolute left-0 flex justify-center items-center w-screen h-screen z-10 transition-all duration-1000'
+      // )}
+      className='absolute left-0 flex justify-center items-center w-screen h-screen z-10'
+      style={{
+        top: -y,
+        opacity: (460 - y) / 460,
+      }}
+      // className='relative flex justify-center items-center w-screen h-screen'
+    >
       {/* Background Image */}
       <div className='absolute top-0 left-0 w-full h-full'>
         <div className='relative w-full h-full'>
@@ -27,7 +61,7 @@ const Section1: NextPage = () => {
 
       {/* 하단 Arrow Icon */}
       <div className='absolute bottom-[20px] left-1/2 -translate-x-1/2'>
-        <div className='relative w-[48px] aspect-square'>
+        <div className='relative w-[48px] aspect-square animate-bounce'>
           <Image
             src='/home/section1/arrow.png'
             alt='Main Arrow Icon'

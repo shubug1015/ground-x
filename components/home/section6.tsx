@@ -11,7 +11,7 @@ const Section6: NextPage = () => {
           </div>
 
           <div className='flex items-center space-x-[20px]'>
-            <div className='text-white text-[18px] font-bold'>채용 안내</div>
+            <div className='text-white text-[18px] font-bold'>채용안내</div>
             <div className='relative w-[18px] h-[18px]'>
               <Image
                 src='/home/section6/arrow-right.png'
