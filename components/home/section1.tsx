@@ -6,41 +6,12 @@ import Image from 'next/image';
 const Section1: NextPage = () => {
   const { y } = useScroll();
 
-  // const typingTextRef = useRef<any>({ current: { innerText: '크리에이터' } });
-
-  // useEffect(() => {
-  //   const typingText = '크리에이터';
-  //   let i = typingText.length;
-  //   let speed = 150;
-  //   let flag = 1;
-
-  //   function typeWriter() {
-  //     if (flag == 0) {
-  //       typingTextRef.current.innerText += typingText.charAt(i);
-  //       if (i == typingText.length) {
-  //         flag = 1;
-  //         clearInterval(interval);
-  //         setTimeout(() => (interval = setInterval(typeWriter, speed)), 1000);
-  //       }
-  //       i++;
-  //     }
-  //     if (flag == 1) {
-  //       typingTextRef.current.innerText = typingText.slice(0, i);
-  //       if (i == 0) {
-  //         flag = 0;
-  //       }
-  //       i--;
-  //     }
-  //   }
-  //   let interval = setInterval(typeWriter, speed);
-  // }, []);
-
   return (
     <div
-      className='absolute left-0 flex justify-center items-center w-screen h-screen z-10'
+      className='absolute top-0 left-0 flex justify-center items-center w-screen h-screen z-10'
       style={{
         top: -y,
-        opacity: (460 - y) / 460,
+        // opacity: (460 - y) / 460,
       }}
       // className='relative flex justify-center items-center w-screen h-screen'
     >
