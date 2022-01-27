@@ -60,7 +60,7 @@ const Section3: NextPage = () => {
   };
 
   return (
-    <div className='mt-[500px] bg-[#f0f4fa] h-[660px] lg:h-[1150px] md:h-[882px]'>
+    <div className='bg-[#f0f4fa] h-[660px] lg:h-[1150px] md:h-[882px]'>
       <Slider
         {...settings}
         className='relative !flex !items-center w-full h-full lg:!items-start'

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Section2: NextPage = () => {
   return (
-    <div className='relative top-[500px] flex justify-center items-start w-screen h-[2840px] lg:h-[3000px] lg:bg-black md:h-[1235px] md:top-[500px]'>
+    <div className='relative mt-[500px] flex justify-center items-start w-screen h-[2840px] lg:h-[3000px] lg:bg-black md:h-[1235px] md:mt-[500px]'>
       {/* Background Image */}
       <div className='absolute top-0 left-0 w-full h-full lg:-top-[300px] md:-top-[250px]'>
         <div className='relative w-full h-full'>

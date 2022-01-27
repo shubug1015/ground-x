@@ -7,7 +7,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className='relative'>
+    <div>
       <Header />
       {children}
       <Footer />
