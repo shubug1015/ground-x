@@ -1,4 +1,3 @@
-import Footer from '@components/footer';
 import Header from '@components/header';
 
 interface LayoutProps {
@@ -10,7 +9,6 @@ export default function Layout({ children }: LayoutProps) {
     <div>
       <Header />
       {children}
-      <Footer />
     </div>
   );
 }
