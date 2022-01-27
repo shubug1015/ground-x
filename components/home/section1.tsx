@@ -1,39 +1,39 @@
 import { useScroll } from '@libs/useScroll';
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import { useEffect, useRef } from 'react';
+// import { useEffect, useRef, useState } from 'react';
 
 const Section1: NextPage = () => {
   const { y } = useScroll();
 
-  const typingTextRef = useRef<any>(null);
+  // const typingTextRef = useRef<any>({ current: { innerText: '크리에이터' } });
 
-  let i = 0;
+  // useEffect(() => {
+  //   const typingText = '크리에이터';
+  //   let i = typingText.length;
+  //   let speed = 150;
+  //   let flag = 1;
 
-  useEffect(() => {
-    let typingText = typingTextRef.current.innerText;
-    let speed = 100;
-    let flag = 0;
-
-    function typeWriter() {
-      if (flag == 0) {
-        if (i == typingText.length) {
-          flag = 1;
-        }
-        typingText += typingText.charAt(i);
-        i++;
-      }
-      if (flag == 1) {
-        if (i == 0) {
-          flag = 0;
-        }
-        typingText = typingText.slice(0, i);
-        i--;
-      }
-    }
-
-    setInterval(typeWriter, speed);
-  }, [i]);
+  //   function typeWriter() {
+  //     if (flag == 0) {
+  //       typingTextRef.current.innerText += typingText.charAt(i);
+  //       if (i == typingText.length) {
+  //         flag = 1;
+  //         clearInterval(interval);
+  //         setTimeout(() => (interval = setInterval(typeWriter, speed)), 1000);
+  //       }
+  //       i++;
+  //     }
+  //     if (flag == 1) {
+  //       typingTextRef.current.innerText = typingText.slice(0, i);
+  //       if (i == 0) {
+  //         flag = 0;
+  //       }
+  //       i--;
+  //     }
+  //   }
+  //   let interval = setInterval(typeWriter, speed);
+  // }, []);
 
   return (
     <div
@@ -59,7 +59,7 @@ const Section1: NextPage = () => {
       {/* Text */}
       <div className='text-white z-[1] lg:w-[720px] md:w-[330px]'>
         <h1 className='font-bold text-[68px] text-center lg:text-[48px] md:text-[36px] md:leading-[1.4]'>
-          누구나 <span ref={typingTextRef}>크리에이터</span>가 되는 세상
+          누구나 크리에이터가 되는 세상
         </h1>
         <h2 className='font-medium text-[38px] text-center mt-[40px] lg:text-[28px] md:text-[18px] md:mt-[28px]'>
           그라운드엑스가 NFT로 새로운 <br className='hidden md:block' />

@@ -141,6 +141,7 @@ const Section5: NextPage = () => {
               ? 'Klip Drops Biz'
               : 'Klip Dev'}
           </div>
+
           <div className='text-[18px] text-[#292e33] leading-[1.67] lg:mt-[20px] md:text-[16px] md:leading-[1.6] md:mt-[6px]'>
             영상 내용에 따라 카피라이팅을 작성합니다. 영상 내용에 따라
             카피라이팅을 작성합니다.
