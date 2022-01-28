@@ -7,6 +7,12 @@ import { useEffect } from 'react';
 const Section1: NextPage = () => {
   useEffect(() => {
     AOS.init();
+
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(function () {
+        AOS.refresh();
+      }, 500);
+    });
   }, []);
 
   return (
