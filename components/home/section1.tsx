@@ -1,7 +1,16 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Section1: NextPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+    });
+  });
+
   return (
     <div className='relative w-screen h-screen'>
       {/* 전체 배경 이미지 */}
@@ -27,6 +36,7 @@ const Section1: NextPage = () => {
         {/* 메인 텍스트 이미지 */}
         <div
           data-aos='fade-up'
+          data-aos-duration='1500'
           className='relative w-[522px] h-[278.2px] lg:w-[560px] lg:h-[298.1px] md:w-[279px] md:h-[148.7px]'
         >
           <Image
@@ -40,6 +50,7 @@ const Section1: NextPage = () => {
         {/* 메인 텍스트 이미지 하단 텍스트 */}
         <div
           data-aos='fade-up'
+          data-aos-duration='1500'
           data-aos-delay='250'
           className='text-[24px] text-white font-medium mt-[44.4px] lg:text-[36px] lg:leading-[1.8] lg:mt-[60px] md:text-[18px] md:mt-[28px]'
         >
