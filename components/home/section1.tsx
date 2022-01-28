@@ -31,7 +31,7 @@ const Section1: NextPage = () => {
         <div
           // data-aos='fade-up'
           // data-aos-duration='1000'
-          className='relative max-w-[522px] max-h-[278.2px] w-[30vw] min-w-[480px] min-h-[255.84px] aspect-[1/0.533] lg:aspect-auto md:aspect-auto lg:w-[560px] lg:h-[298.1px] md:w-[279px] md:h-[148.7px] md:min-w-[279px] md:min-h-[148.7px] animate-[fadeUp_1s_ease-in-out]'
+          className='relative max-w-[522px] max-h-[278.2px] w-[30vw] min-w-[480px] min-h-[255.84px] aspect-[1/0.533] lg:aspect-auto md:aspect-auto lg:max-w-[560px] lg:max-h-[298.1px] lg:w-[560px] lg:h-[298.1px] md:w-[279px] md:h-[148.7px] md:min-w-[279px] md:min-h-[148.7px] animate-[fadeUp_1s_ease-in-out]'
         >
           <Image
             src='/home/section1/main-title.png'
