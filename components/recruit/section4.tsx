@@ -163,8 +163,9 @@ const Section4: NextPage = () => {
                   qna.open
                     ? 'visible opacity-100 mt-[21px] mb-[40px] h-auto'
                     : 'invisible opacity-0 h-0',
-                  'text-[#292e33] whitespace-pre-wrap transition-all md:text-[14px]'
+                  'text-[#292e33] whitespace-pre-wrap transition-all md:text-[14px] md:whitespace-normal md:w-[320px]'
                 )}
+                style={{ wordBreak: 'keep-all' }}
               >
                 {qna.answer}
               </div>
