@@ -60,6 +60,7 @@ const Section2: NextPage = () => {
                 ? '800'
                 : '1200'
             }
+            data-aos-duration='1500'
             className='text-center text-[32px] text-white font-medium whitespace-pre-wrap md:text-[20px] z-[10]'
           >
             {l.text}
