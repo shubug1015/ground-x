@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 const Section2: NextPage = () => {
   return (
     <div className='flex justify-center'>
-      <div className='w-[1180px] pt-[160px] pb-[120px] lg:w-[720px] lg:pt-[100px] lg:pb-[80px] md:w-[330px] md:pt-[80px] md:pb-[60px]'>
+      <div className='w-[1180px] pt-[160px] pb-[120px] lg:w-[720px] lg:pt-[100px] lg:pb-[80px] md:w-[327px] md:pt-[80px] md:pb-[60px]'>
         {/* Title */}
         <h1 className='text-[#12161a] text-[36px] font-medium leading-[1.4] md:text-[28px]'>
           아이디어를 마음껏 펼칠 <br className='hidden md:block' />수 있게,{' '}
@@ -14,13 +14,13 @@ const Section2: NextPage = () => {
         {/* Section1 */}
         <div className='mt-[161px] lg:mt-[100px] md:mt-[60px]'>
           <div className='flex justify-between space-x-10 md:flex-col md:space-x-0 md:space-y-[28px]'>
-            <h2 className='w-1/4 text-[24px] text-[#9d9d9d] font-medium leading-[1.5] md:w-[330px]'>
+            <h2 className='w-1/4 text-[24px] text-[#9d9d9d] font-medium leading-[1.5] md:w-[327px]'>
               크루의 건강을
               <br />
               지원합니다.
             </h2>
 
-            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[330px] md:h-auto md:pb-[28px]'>
+            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[327px] md:h-auto md:pb-[28px]'>
               <div className='text-[18px] text-[#12161a] font-medium leading-[1.6]'>
                 단체상해보험
               </div>
@@ -34,7 +34,7 @@ const Section2: NextPage = () => {
               </div>
             </div>
 
-            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[330px] md:h-auto md:pb-[28px]'>
+            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[327px] md:h-auto md:pb-[28px]'>
               <div className='text-[18px] text-[#12161a] font-medium leading-[1.6]'>
                 건강검진 지원
               </div>
@@ -53,13 +53,13 @@ const Section2: NextPage = () => {
         {/* Section2 */}
         <div className='mt-[68px] md:mt-[60px]'>
           <div className='flex justify-between space-x-10 md:flex-col md:space-x-0 md:space-y-[28px]'>
-            <h2 className='w-1/4 text-[24px] text-[#9d9d9d] font-medium leading-[1.5] md:w-[330px]'>
+            <h2 className='w-1/4 text-[24px] text-[#9d9d9d] font-medium leading-[1.5] md:w-[327px]'>
               크루의 휴식을
               <br />
               지원합니다.
             </h2>
 
-            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[330px] md:h-auto md:pb-[28px]'>
+            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[327px] md:h-auto md:pb-[28px]'>
               <div className='text-[18px] text-[#12161a] font-medium leading-[1.6]'>
                 리프레쉬 휴가
               </div>
@@ -73,7 +73,7 @@ const Section2: NextPage = () => {
               </div>
             </div>
 
-            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[330px] md:h-auto md:pb-[28px]'>
+            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[327px] md:h-auto md:pb-[28px]'>
               <div className='text-[18px] text-[#12161a] font-medium leading-[1.6]'>
                 Early Bye
               </div>
@@ -85,7 +85,7 @@ const Section2: NextPage = () => {
               </div>
             </div>
 
-            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[330px] md:h-auto md:pb-[28px]'>
+            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[327px] md:h-auto md:pb-[28px]'>
               <div className='text-[18px] text-[#12161a] font-medium leading-[1.6]'>
                 어린이집
               </div>
@@ -104,13 +104,13 @@ const Section2: NextPage = () => {
         {/* Section3 */}
         <div className='mt-[68px] md:mt-[60px]'>
           <div className='flex justify-between space-x-10 md:flex-col md:space-x-0 md:space-y-[28px]'>
-            <h2 className='w-1/4 text-[24px] text-[#9d9d9d] font-medium leading-[1.5] md:w-[330px]'>
+            <h2 className='w-1/4 text-[24px] text-[#9d9d9d] font-medium leading-[1.5] md:w-[327px]'>
               크루의 생활을
               <br />
               지원합니다.
             </h2>
 
-            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[330px] md:h-auto md:pb-[28px]'>
+            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[327px] md:h-auto md:pb-[28px]'>
               <div className='text-[18px] text-[#12161a] font-medium leading-[1.6]'>
                 복지카드 제공
               </div>
@@ -124,7 +124,7 @@ const Section2: NextPage = () => {
               </div>
             </div>
 
-            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[330px] md:h-auto md:pb-[28px]'>
+            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[327px] md:h-auto md:pb-[28px]'>
               <div className='text-[18px] text-[#12161a] font-medium leading-[1.6]'>
                 명절 선물 지급
               </div>
@@ -138,7 +138,7 @@ const Section2: NextPage = () => {
               </div>
             </div>
 
-            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[330px] md:h-auto md:pb-[28px]'>
+            <div className='w-1/4 h-[196px] border-b border-[#d1d1d1] md:w-[327px] md:h-auto md:pb-[28px]'>
               <div className='text-[18px] text-[#12161a] font-medium leading-[1.6]'>
                 경조사 지원
               </div>

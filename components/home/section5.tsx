@@ -14,6 +14,7 @@ const Section4: NextPage = () => {
       hoverText:
         '디지털 아트 큐레이션 갤러리,\nKlip Drops는 다양한 디지털 아트를\n누구나 손쉽게 일상에서 접하고 소유할\n수 있도록 유통하는 서비스입니다.',
       hoverBtn: 'Klip Drops 페이지',
+      url: 'https://klipdrops.com',
     },
     {
       id: 1,
@@ -23,6 +24,7 @@ const Section4: NextPage = () => {
       hoverText:
         '내 손안의 디지털 지갑,\nKlip은 나의 디지털 자산을 안전하게 한 곳\n에 보관하고 친구에게 간편하게 전송할 수\n있는 서비스입니다.',
       hoverBtn: 'Klip 지갑 소개 페이지',
+      url: 'https://klipwallet.com',
     },
     {
       id: 2,
@@ -32,6 +34,7 @@ const Section4: NextPage = () => {
       hoverText:
         'Klaytn API Service,\nKAS는 블록체인 서비스를 더 쉽고 빠르게\n만들 수 있도록 블록체인 애플리케이션\n개발팀의 성공을 지원하는 서비스입니다.',
       hoverBtn: 'KAS 소개 페이지',
+      url: 'https://www.klaytnapi.com',
     },
   ];
 
@@ -70,7 +73,10 @@ const Section4: NextPage = () => {
                   <div className='text-white leading-[1.6] translate-y-5 group-hover:translate-y-0 transition-all duration-300 whitespace-pre-wrap lg:text-[20px] md:text-[14px]'>
                     {l.hoverText}
                   </div>
-                  <div className='flex justify-between items-center px-[20px] border border-[#ffffff] w-full h-[52px] mt-[40px] z-[1] cursor-pointer translate-y-5 group-hover:translate-y-0 transition-all duration-300 lg:mt-[80px] lg:h-[60px] md:mt-[30px] md:h-[50px]'>
+                  <div
+                    onClick={() => window.open(l.url)}
+                    className='flex justify-between items-center px-[20px] border border-[#ffffff] w-full h-[52px] mt-[40px] z-[1] cursor-pointer translate-y-5 group-hover:translate-y-0 transition-all duration-300 lg:mt-[80px] lg:h-[60px] md:mt-[30px] md:h-[50px]'
+                  >
                     <div className='text-white text-[14px] lg:text-[18px] md:text-[14px]'>
                       {l.hoverBtn}
                     </div>

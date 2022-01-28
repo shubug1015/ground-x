@@ -55,10 +55,10 @@ const Section2: NextPage = () => {
               l.id === 0
                 ? '0'
                 : l.id === 1
-                ? '500'
+                ? '400'
                 : l.id === 2
-                ? '1000'
-                : '1500'
+                ? '800'
+                : '1200'
             }
             className='text-center text-[32px] text-white font-medium whitespace-pre-wrap md:text-[20px] z-[10]'
           >

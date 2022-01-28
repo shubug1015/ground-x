@@ -4,14 +4,21 @@ import Image from 'next/image';
 const Section3: NextPage = () => {
   return (
     <div className='flex justify-center bg-[#f7f7f7]'>
-      <div className='w-[1180px] pt-[120px] pb-[166px] lg:w-[720px] lg:pt-[100px] lg:pb-[100px] md:w-[330px] md:py-[60px]'>
+      <div className='w-[1180px] pt-[120px] pb-[166px] lg:w-[720px] lg:pt-[100px] lg:pb-[100px] md:w-[327px] md:py-[60px]'>
         {/* Title */}
         <div className='flex justify-between'>
           <h1 className='text-[#12161a] text-[36px] font-medium leading-[1.4] lg:text-[32px] md:text-[26x]'>
             채용 프로세스
           </h1>
 
-          <div className='flex justify-between items-center w-[180px] h-[55px] border border-[#292e33] px-[20px] cursor-pointer md:hidden'>
+          <div
+            onClick={() =>
+              window.open(
+                'https://careers.kakao.com/jobs?company=SUBSIDIARY_GROUP&page=1&keyword=groundx&employeeType='
+              )
+            }
+            className='flex justify-between items-center w-[180px] h-[55px] border border-[#292e33] px-[20px] cursor-pointer md:hidden'
+          >
             <div className='font-medium text-[#12161a]'>채용공고</div>
             <div className='relative w-[18px] h-[18px]'>
               <Image
@@ -63,7 +70,7 @@ const Section3: NextPage = () => {
               <div className='hidden lg:block lg:text-[21px] lg:mb-[10px] md:text-[15px] font-medium md:mb-[4px]'>
                 서류전형
               </div>
-              <div className='flex w-[200px] lg:w-[720px] md:w-[330px]'>
+              <div className='flex w-[200px] lg:w-[720px] md:w-[327px]'>
                 <div className='text-[18px] font-bold leading-[1.3] ml-3 mr-2 lg:text-[22px] lg:leading-[1.2]'>
                   ·
                 </div>
@@ -78,7 +85,7 @@ const Section3: NextPage = () => {
               <div className='hidden lg:block lg:text-[21px] lg:mb-[10px] md:text-[15px] font-medium md:mb-[4px]'>
                 코딩 테스트
               </div>
-              <div className='flex w-[200px] lg:w-[720px] md:w-[330px]'>
+              <div className='flex w-[200px] lg:w-[720px] md:w-[327px]'>
                 <div className='text-[18px] font-bold leading-[1.3] ml-3 mr-2 lg:text-[22px] lg:leading-[1.2]'>
                   ·
                 </div>
@@ -96,7 +103,7 @@ const Section3: NextPage = () => {
                 </div>
               </div>
 
-              <div className='flex w-[200px] lg:w-[720px] md:w-[330px]'>
+              <div className='flex w-[200px] lg:w-[720px] md:w-[327px]'>
                 <div className='text-[18px] font-bold leading-[1.3] ml-3 mr-2 lg:text-[22px] lg:leading-[1.2]'>
                   ·
                 </div>
@@ -110,7 +117,7 @@ const Section3: NextPage = () => {
               <div className='hidden lg:block lg:text-[21px] lg:mb-[10px] md:text-[15px] font-medium md:mb-[4px]'>
                 1차 인터뷰
               </div>
-              <div className='flex w-[200px] lg:w-[720px] md:w-[330px]'>
+              <div className='flex w-[200px] lg:w-[720px] md:w-[327px]'>
                 <div className='text-[18px] font-bold leading-[1.3] ml-3 mr-2 lg:text-[22px] lg:leading-[1.2]'>
                   ·
                 </div>
@@ -119,7 +126,7 @@ const Section3: NextPage = () => {
                   실무 기술 면접
                 </div>
               </div>
-              <div className='flex w-[200px] lg:w-[720px] md:w-[330px]'>
+              <div className='flex w-[200px] lg:w-[720px] md:w-[327px]'>
                 <div className='text-[18px] font-bold leading-[1.3] ml-3 mr-2 lg:text-[22px] lg:leading-[1.2]'>
                   ·
                 </div>
@@ -136,7 +143,7 @@ const Section3: NextPage = () => {
               <div className='hidden lg:block lg:text-[21px] lg:mb-[10px] md:text-[15px] font-medium md:mb-[4px]'>
                 2차 인터뷰
               </div>
-              <div className='flex w-[200px] lg:w-[720px] md:w-[330px]'>
+              <div className='flex w-[200px] lg:w-[720px] md:w-[327px]'>
                 <div className='text-[18px] font-bold leading-[1.3] ml-3 mr-2 lg:text-[22px] lg:leading-[1.2]'>
                   ·
                 </div>
@@ -195,7 +202,7 @@ const Section3: NextPage = () => {
               <div className='hidden lg:block lg:text-[21px] lg:mb-[10px] md:text-[15px] font-medium md:mb-[4px]'>
                 서류전형
               </div>
-              <div className='flex w-[200px] lg:w-[720px] md:w-[330px]'>
+              <div className='flex w-[200px] lg:w-[720px] md:w-[327px]'>
                 <div className='text-[18px] font-bold leading-[1.3] ml-3 mr-2 lg:text-[22px] lg:leading-[1.2]'>
                   ·
                 </div>
@@ -210,7 +217,7 @@ const Section3: NextPage = () => {
               <div className='hidden lg:block lg:text-[21px] lg:mb-[10px] md:text-[15px] font-medium md:mb-[4px]'>
                 전화 인터뷰
               </div>
-              <div className='flex w-[200px] lg:w-[720px] md:w-[330px]'>
+              <div className='flex w-[200px] lg:w-[720px] md:w-[327px]'>
                 <div className='text-[18px] font-bold leading-[1.3] ml-3 mr-2 lg:text-[22px] lg:leading-[1.2]'>
                   ·
                 </div>
@@ -226,7 +233,7 @@ const Section3: NextPage = () => {
               <div className='hidden lg:block lg:text-[21px] lg:mb-[10px] md:text-[15px] font-medium md:mb-[4px]'>
                 1차 인터뷰
               </div>
-              <div className='flex w-[200px] lg:w-[720px] md:w-[330px]'>
+              <div className='flex w-[200px] lg:w-[720px] md:w-[327px]'>
                 <div className='text-[18px] font-bold leading-[1.3] ml-3 mr-2 lg:text-[22px] lg:leading-[1.2]'>
                   ·
                 </div>
@@ -242,7 +249,7 @@ const Section3: NextPage = () => {
               <div className='hidden lg:block lg:text-[21px] lg:mb-[10px] md:text-[15px] font-medium md:mb-[4px]'>
                 2차 인터뷰
               </div>
-              <div className='flex w-[200px] lg:w-[720px] md:w-[330px]'>
+              <div className='flex w-[200px] lg:w-[720px] md:w-[327px]'>
                 <div className='text-[18px] font-bold leading-[1.3] ml-3 mr-2 lg:text-[22px] lg:leading-[1.2]'>
                   ·
                 </div>
@@ -262,7 +269,14 @@ const Section3: NextPage = () => {
         </div>
 
         {/* Mobile 채용공고 */}
-        <div className='justify-between items-center w-[330px] h-[52px] border border-[#292e33] px-[20px] mt-[60px] cursor-pointer hidden md:flex'>
+        <div
+          onClick={() =>
+            window.open(
+              'https://careers.kakao.com/jobs?company=SUBSIDIARY_GROUP&page=1&keyword=groundx&employeeType='
+            )
+          }
+          className='justify-between items-center w-[327px] h-[52px] border border-[#292e33] px-[20px] mt-[60px] cursor-pointer hidden md:flex'
+        >
           <div className='font-medium text-[#12161a] text-[14px]'>채용공고</div>
           <div className='relative w-[18px] h-[18px]'>
             <Image

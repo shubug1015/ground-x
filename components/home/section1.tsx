@@ -25,7 +25,10 @@ const Section1: NextPage = () => {
 
       <div className='absolute top-[313.1px] left-1/2 -translate-x-1/2 flex flex-col items-center lg:items-start md:top-[280px]'>
         {/* 메인 텍스트 이미지 */}
-        <div className='relative w-[522px] h-[278.2px] lg:w-[560px] lg:h-[298.1px] md:w-[279px] md:h-[148.7px]'>
+        <div
+          data-aos='fade-up'
+          className='relative w-[522px] h-[278.2px] lg:w-[560px] lg:h-[298.1px] md:w-[279px] md:h-[148.7px]'
+        >
           <Image
             src='/home/section1/main-title.png'
             alt='Main Title'
@@ -35,7 +38,11 @@ const Section1: NextPage = () => {
         </div>
 
         {/* 메인 텍스트 이미지 하단 텍스트 */}
-        <div className='text-[24px] text-white font-medium mt-[44.4px] lg:text-[36px] lg:leading-[1.8] lg:mt-[60px] md:text-[18px] md:mt-[28px]'>
+        <div
+          data-aos='fade-up'
+          data-aos-delay='250'
+          className='text-[24px] text-white font-medium mt-[44.4px] lg:text-[36px] lg:leading-[1.8] lg:mt-[60px] md:text-[18px] md:mt-[28px]'
+        >
           그라운드엑스가 NFT로 <br className='hidden lg:block md:hidden' />
           새로운 <br className='hidden md:block' />
           디지털 세상을 만들어갑니다.
