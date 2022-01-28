@@ -1,5 +1,8 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Section4: NextPage = () => {
   const list = [
@@ -18,7 +21,7 @@ const Section4: NextPage = () => {
       subtitle: 'Simple & Secure Wallet',
       title: 'Klip',
       hoverText:
-        '내 손안의 디지털 지갑,\nKlip은 나의 디지털 자산을 안전하게 한곳\n에 보관하고 친구에게 간편하게 전송할 수\n있는 서비스입니다.',
+        '내 손안의 디지털 지갑,\nKlip은 나의 디지털 자산을 안전하게 한 곳\n에 보관하고 친구에게 간편하게 전송할 수\n있는 서비스입니다.',
       hoverBtn: 'Klip 지갑 소개 페이지',
     },
     {
@@ -32,6 +35,12 @@ const Section4: NextPage = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+    });
+  });
+
   return (
     <div className='flex justify-center'>
       <div className='w-[1180px] py-[120px] lg:w-[632px] lg:py-[80px] md:w-[327px] md:py-[60px]'>
@@ -43,7 +52,11 @@ const Section4: NextPage = () => {
 
         <div className='flex justify-between mt-[40px] lg:w-full lg:flex-col lg:space-y-[60px] lg:items-center md:mt-[28px] md:space-y-[40px]'>
           {list.map((l) => (
-            <div key={l.id}>
+            <div
+              key={l.id}
+              data-aos='fade-up'
+              data-aos-delay={l.id === 0 ? '0' : l.id === 1 ? '300' : '600'}
+            >
               <div className='relative w-[380px] h-[280px] transition-all duration-300 group lg:w-[632px] lg:h-[433px] md:w-[327px] md:h-[224px]'>
                 <Image
                   src={l.imgUrl}

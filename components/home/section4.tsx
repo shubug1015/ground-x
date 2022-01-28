@@ -3,6 +3,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Section3: NextPage = () => {
   const PrevArrow = (props: any) => {
@@ -59,6 +62,11 @@ const Section3: NextPage = () => {
     nextArrow: <NextArrow />,
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+    });
+  });
   return (
     <div className='bg-[#f0f4fa] h-[660px] lg:h-[975px] md:h-[950px]'>
       <Slider
@@ -87,7 +95,10 @@ const Section3: NextPage = () => {
                 {/* Text */}
                 <div className='w-1/2 lg:w-full lg:flex lg:justify-start lg:mt-[40px] md:w-[327px]'>
                   <div>
-                    <h1 className='text-[32px] leading-[1.4] md:text-[22px]'>
+                    <h1
+                      data-aos='fade-left'
+                      className='text-[32px] leading-[1.4] md:text-[22px]'
+                    >
                       “그라운드엑스는 성장 의지가 강한{' '}
                       <br className='lg:hidden md:block' />
                       크루들이 <br className='hidden lg:block md:hidden' />
@@ -95,7 +106,11 @@ const Section3: NextPage = () => {
                     </h1>
 
                     {/* PC */}
-                    <div className='text-[18px] text-[#333333] leading-[1.67] mt-[20px] lg:hidden md:text-[16px]'>
+                    <div
+                      data-aos='fade-left'
+                      data-aos-delay='300'
+                      className='text-[18px] text-[#333333] leading-[1.67] mt-[20px] lg:hidden md:text-[16px]'
+                    >
                       그라운드엑스는 성장 의지가 강한 크루들이 모여있습니다.
                       또한 다양한 산업군
                       <br />
@@ -115,7 +130,11 @@ const Section3: NextPage = () => {
                     </div>
 
                     {/* Tablet */}
-                    <div className='hidden text-[17.5px] text-[#333333] leading-[1.67] mt-[20px] lg:block md:hidden'>
+                    <div
+                      data-aos='fade-left'
+                      data-aos-delay='300'
+                      className='hidden text-[17.5px] text-[#333333] leading-[1.67] mt-[20px] lg:block md:hidden'
+                    >
                       그라운드엑스는 성장 의지가 강한 크루들이 모여있습니다.
                       또한 다양한 산업군에서
                       <br />
@@ -133,7 +152,11 @@ const Section3: NextPage = () => {
                     </div>
 
                     {/* Mobile */}
-                    <div className='hidden text-[16px] text-[#333333] leading-[1.67] mt-[20px] md:block'>
+                    <div
+                      data-aos='fade-left'
+                      data-aos-delay='300'
+                      className='hidden text-[16px] text-[#333333] leading-[1.67] mt-[20px] md:block'
+                    >
                       그라운드엑스는 성장 의지가 강한 크루들이 모여
                       <br />
                       있습니다. 또한 다양한 산업군에서 전문성을 갖고

@@ -1,7 +1,15 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Section3: NextPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+    });
+  });
   return (
     <div className='relative w-screen h-[1200px] bg-[#212731] pt-[177px] lg:flex lg:flex-col lg:items-center lg:h-auto lg:pt-[280px] lg:pb-[140px] md:pt-[180px] md:pb-[120px]'>
       {/* 상단 이미지 */}
@@ -18,14 +26,27 @@ const Section3: NextPage = () => {
 
       {/* 텍스트 섹션1 */}
       <div className='ml-[50%] lg:ml-0 lg:w-[632px] md:w-[327px]'>
-        <div className='font-bold text-[#38a8fa] md:text-[14px]'>MISSION</div>
+        <div
+          data-aos='fade-up'
+          className='font-bold text-[#38a8fa] md:text-[14px]'
+        >
+          MISSION
+        </div>
 
-        <h2 className='text-white text-[36px] font-medium leading-[1.4] mt-[12px] lg:text-[32px] lg:mt-[8px] md:text-[28px] md:mt-[6px]'>
+        <h2
+          data-aos='fade-up'
+          data-aos-delay='300'
+          className='text-white text-[36px] font-medium leading-[1.4] mt-[12px] lg:text-[32px] lg:mt-[8px] md:text-[28px] md:mt-[6px]'
+        >
           블록체인으로 만드는 <br className='hidden md:block' />더 나은 세상
         </h2>
 
         {/* PC */}
-        <div className='text-white text-[18px] leading-[1.56] mt-[20px] lg:hidden'>
+        <div
+          data-aos='fade-up'
+          data-aos-delay='600'
+          className='text-white text-[18px] leading-[1.56] mt-[20px] lg:hidden'
+        >
           그라운드엑스가 꿈꾸는 더 나은 세상이란 디지털 소유권을 기반으로
           <br />
           누구나 크리에이터가 되는 세상입니다. 새로워진 고객 경험으로 디지털
@@ -39,7 +60,11 @@ const Section3: NextPage = () => {
         </div>
 
         {/* Tablet */}
-        <div className='hidden text-white text-[18px] leading-[1.56] mt-[20px] lg:block lg:text-[17.5px] md:hidden'>
+        <div
+          data-aos='fade-up'
+          data-aos-delay='600'
+          className='hidden text-white text-[18px] leading-[1.56] mt-[20px] lg:block lg:text-[17.5px] md:hidden'
+        >
           그라운드엑스가 꿈꾸는 더 나은 세상이란 디지털 소유권을 기반으로 누구나
           <br />
           크리에이터가 되는 세상입니다. 새로워진 고객 경험으로 디지털 산업뿐만
@@ -53,7 +78,11 @@ const Section3: NextPage = () => {
         </div>
 
         {/* Mobile */}
-        <div className='hidden text-white leading-[1.6] mt-[20px] md:block'>
+        <div
+          data-aos='fade-up'
+          data-aos-delay='600'
+          className='hidden text-white leading-[1.6] mt-[20px] md:block'
+        >
           그라운드엑스가 꿈꾸는 더 나은 세상이란 디지털
           <br />
           소유권을 기반으로 누구나 크리에이터가 되는
@@ -72,14 +101,27 @@ const Section3: NextPage = () => {
 
       {/* 텍스트 섹션2 */}
       <div className='ml-[calc(50vw-590px)] mt-[381px] lg:mt-[80px] lg:ml-0 lg:w-[632px] md:w-[327px]'>
-        <div className='font-bold text-[#38a8fa] md:text-[14px]'>VISION</div>
+        <div
+          data-aos='fade-up'
+          className='font-bold text-[#38a8fa] md:text-[14px]'
+        >
+          VISION
+        </div>
 
-        <h2 className='text-white text-[36px] font-medium leading-[1.4] mt-[12px] lg:text-[32px] lg:mt-[8px] md:text-[28px] md:mt-[6px]'>
+        <h2
+          data-aos='fade-up'
+          data-aos-delay='300'
+          className='text-white text-[36px] font-medium leading-[1.4] mt-[12px] lg:text-[32px] lg:mt-[8px] md:text-[28px] md:mt-[6px]'
+        >
           디지털 자산 서비스의 <br className='hidden md:block' />
           글로벌 리더
         </h2>
 
-        <div className='text-white text-[18px] leading-[1.56] mt-[20px] lg:hidden'>
+        <div
+          data-aos='fade-up'
+          data-aos-delay='600'
+          className='text-white text-[18px] leading-[1.56] mt-[20px] lg:hidden'
+        >
           그라운드엑스는 블록체인으로 디지털 자산의 경계선을 지워 가고 신뢰할 수
           <br />
           있습니다. 세대와 문화의 구분 없이 누구나 받아들일 수 있는 가장
@@ -88,7 +130,11 @@ const Section3: NextPage = () => {
           신뢰할 수 있는 디지털 자산 경험을 제공합니다.
         </div>
 
-        <div className='hidden text-white text-[17.5px] leading-[1.56] mt-[20px] lg:block md:hidden'>
+        <div
+          data-aos='fade-up'
+          data-aos-delay='600'
+          className='hidden text-white text-[17.5px] leading-[1.56] mt-[20px] lg:block md:hidden'
+        >
           그라운드엑스는 블록체인으로 디지털 자산의 경계선을 지워 가고 신뢰할 수
           있습니다.
           <br />
@@ -98,7 +144,11 @@ const Section3: NextPage = () => {
           디지털 자산 경험을 제공합니다.
         </div>
 
-        <div className='hidden text-white leading-[1.6] mt-[20px] md:block'>
+        <div
+          data-aos='fade-up'
+          data-aos-delay='600'
+          className='hidden text-white leading-[1.6] mt-[20px] md:block'
+        >
           그라운드엑스는 블록체인으로 디지털 자산의 경계선을 지워 가고 신뢰할 수
           있습니다.
           <br />

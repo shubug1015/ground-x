@@ -1,5 +1,8 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Section2: NextPage = () => {
   const list = [
@@ -25,23 +28,44 @@ const Section2: NextPage = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+    });
+  });
+
   return (
     <div className='relative flex w-screen h-screen lg:flex-col lg:h-auto'>
       {list.map((l) => (
         <div
           key={l.id}
-          className='relative w-1/4 h-full lg:w-full lg:h-[360px] md:h-[220px]'
+          className='relative w-1/4 h-full flex justify-center items-center lg:w-full lg:h-[360px] md:h-[220px] group'
         >
           <Image
             src={l.imgUrl}
             alt='Section2 Image'
             layout='fill'
             objectFit='cover'
+            className='group-hover:scale-110 transition-transform duration-300'
           />
 
-          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#0000004d] flex justify-center items-center text-center text-[32px] text-white font-medium whitespace-pre-wrap md:text-[20px]'>
+          <div
+            data-aos='fade-right'
+            data-aos-delay={
+              l.id === 0
+                ? '0'
+                : l.id === 1
+                ? '500'
+                : l.id === 2
+                ? '1000'
+                : '1500'
+            }
+            className='text-center text-[32px] text-white font-medium whitespace-pre-wrap md:text-[20px] z-[10]'
+          >
             {l.text}
           </div>
+
+          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#0000004d] flex justify-center items-center ' />
         </div>
       ))}
     </div>

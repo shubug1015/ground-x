@@ -130,7 +130,38 @@ const Section5: NextPage = () => {
         </div>
 
         {/* Video */}
-        <div className='w-full h-[640px] mt-[80px] bg-[#656565] lg:h-[433px] lg:mt-[32px] md:mt-[40px] md:h-[203px]'></div>
+        {/* <div className='lg:w-[632px] md:w-[327px]'>
+          {selectedVideo === 0 ? (
+            <video
+              key='1'
+              controls
+              autoPlay
+              loop
+              className='mt-[80px] lg:h-[433px] lg:mt-[32px] md:mt-[40px] md:h-[203px]'
+            >
+              <source src='/video/klip.mp4' />
+            </video>
+          ) : selectedVideo === 1 ? (
+            <video
+              key='2'
+              controls
+              autoPlay
+              loop
+              className='w-full h-[640px] mt-[80px] bg-[#656565] lg:h-[433px] lg:mt-[32px] md:mt-[40px] md:h-[203px]'
+            >
+              <source src='/video/klip-drops.mp4' />
+            </video>
+          ) : (
+            <video
+              key='3'
+              autoPlay
+              loop
+              className='w-full h-[640px] mt-[80px] bg-[#656565] lg:h-[433px] lg:mt-[32px] md:mt-[40px] md:h-[203px]'
+            >
+              <source src='/video/klip-dev.mp4' />
+            </video>
+          )}
+        </div> */}
       </div>
     </div>
   );
