@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Section2: NextPage = () => {
   return (
     <div
-      className='relative flex justify-center items-start w-screen h-[2840px] lg:h-[3000px] lg:bg-black md:h-[1235px]'
+      className='relative flex justify-center items-start w-screen h-[2840px] mt-[500px] lg:h-[3000px] lg:bg-black md:h-[1235px]'
       // className='relative mt-[500px] flex justify-center items-start w-screen h-[2840px] lg:h-[3000px] lg:bg-black md:h-[1235px] md:mt-[500px]'
     >
       {/* Background Image */}
