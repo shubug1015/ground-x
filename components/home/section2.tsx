@@ -26,9 +26,12 @@ const Section2: NextPage = () => {
   ];
 
   return (
-    <div className='relative flex w-screen h-screen '>
+    <div className='relative flex w-screen h-screen lg:flex-col lg:h-auto'>
       {list.map((l) => (
-        <div key={l.id} className='relative w-1/4 h-full'>
+        <div
+          key={l.id}
+          className='relative w-1/4 h-full lg:w-full lg:h-[360px] md:h-[220px]'
+        >
           <Image
             src={l.imgUrl}
             alt='Section2 Image'
@@ -36,7 +39,7 @@ const Section2: NextPage = () => {
             objectFit='cover'
           />
 
-          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#0000004d] flex justify-center items-center text-center text-[32px] text-white font-medium whitespace-pre-wrap'>
+          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#0000004d] flex justify-center items-center text-center text-[32px] text-white font-medium whitespace-pre-wrap md:text-[20px]'>
             {l.text}
           </div>
         </div>

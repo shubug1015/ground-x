@@ -17,16 +17,16 @@ const Section5: NextPage = () => {
 
   return (
     <div className='flex justify-center bg-[#212731]'>
-      <div className='w-[1180px] pt-[122px] pb-[180px] lg:w-[720px] md:w-screen md:flex md:flex-col md:items-center'>
+      <div className='w-[1180px] pt-[122px] pb-[180px] lg:flex lg:flex-col lg:items-center lg:py-[80px] md:py-[60px] md:w-screen md:flex md:flex-col md:items-center'>
         {/* Title & Select Buttons */}
-        <div className='flex justify-between items-center w-full lg:flex-col lg:items-start md:w-[330px]'>
+        <div className='flex justify-between items-center w-full lg:flex-col lg:items-start lg:w-[632px] md:w-[327px]'>
           {/* Title */}
           <h1 className='font-medium text-[36px] text-white md:text-[28px]'>
             그라운드엑스 크루 인터뷰
           </h1>
 
           {/* Select Buttons */}
-          <div className='flex space-x-[8px] lg:mt-[40px] md:hidden'>
+          <div className='flex space-x-[8px] lg:mt-[40px] lg:hidden md:hidden'>
             <div
               onClick={() => selectVideo(0)}
               className={cls(
@@ -64,13 +64,13 @@ const Section5: NextPage = () => {
             </div>
           </div>
 
-          {/* Mobile Select Buttons */}
-          <div className='hidden w-full mt-[40px] md:block'>
+          {/* Tablet & Mobile Select Buttons */}
+          <div className='hidden w-full mt-[40px] lg:block md:block'>
             <div
               onClick={toggleSelectVideo}
-              className='relative flex justify-between items-center pl-[28px] pr-[20px] border border-black w-full h-[56px]'
+              className='relative flex justify-between items-center pl-[28px] pr-[20px] border border-white w-full lg:h-[68px] md:h-[56px]'
             >
-              <div className='font-medium'>
+              <div className='font-medium text-white text-[18px] md:text-[16px]'>
                 {selectedVideo === 0
                   ? 'Klip Biz'
                   : selectedVideo === 1
@@ -78,16 +78,16 @@ const Section5: NextPage = () => {
                   : 'Klip Dev'}
               </div>
 
-              <div className='relative w-[24px] h-[24px]'>
+              <div className='relative w-[32px] h-[32px] md:w-[24px] md:h-[24px]'>
                 {!selectVideoOpen ? (
                   <Image
-                    src='/tmp/2/section5/arrow-down-md.png'
+                    src='/home/section6/arrow-down.png'
                     alt='Down Arrow Icon'
                     layout='fill'
                   />
                 ) : (
                   <Image
-                    src='/tmp/2/section5/arrow-up-md.png'
+                    src='/home/section6/arrow-up.png'
                     alt='Up Arrow Icon'
                     layout='fill'
                   />
@@ -95,12 +95,12 @@ const Section5: NextPage = () => {
               </div>
 
               {selectVideoOpen && (
-                <div className='absolute w-[330px] top-[55px] -left-px'>
+                <div className='absolute lg:w-[632px] md:w-[327px] lg:top-[68px] md:top-[55px] -left-px'>
                   <div
                     onClick={() => selectVideo(0)}
                     className={cls(
                       selectedVideo === 0 ? 'bg-[#f0f4fa]' : 'bg-white',
-                      'flex items-center pl-[28px] border border-t-0 border-black w-full h-[56px]'
+                      'flex items-center pl-[28px] border border-t-0 border-white w-full lg:h-[68px] md:h-[56px] lg:text-[18px]'
                     )}
                   >
                     <div className='font-medium'>Klip Biz</div>
@@ -109,7 +109,7 @@ const Section5: NextPage = () => {
                     onClick={() => selectVideo(1)}
                     className={cls(
                       selectedVideo === 1 ? 'bg-[#f0f4fa]' : 'bg-white',
-                      'flex items-center pl-[28px] border border-t-0 border-black w-full h-[56px]'
+                      'flex items-center pl-[28px] border border-t-0 border-white w-full lg:h-[68px] md:h-[56px] lg:text-[18px]'
                     )}
                   >
                     <div className='font-medium'>Klip Drops Biz</div>
@@ -118,7 +118,7 @@ const Section5: NextPage = () => {
                     onClick={() => selectVideo(2)}
                     className={cls(
                       selectedVideo === 2 ? 'bg-[#f0f4fa]' : 'bg-white',
-                      'flex items-center pl-[28px] border border-t-0 border-black w-full h-[56px]'
+                      'flex items-center pl-[28px] border border-t-0 border-white w-full lg:h-[68px] md:h-[56px] lg:text-[18px]'
                     )}
                   >
                     <div className='font-medium'>Klip Dev</div>
@@ -130,7 +130,7 @@ const Section5: NextPage = () => {
         </div>
 
         {/* Video */}
-        <div className='w-full h-[640px] mt-[80px] bg-[#656565] lg:h-[400px] md:mt-[40px] md:h-[203px]'></div>
+        <div className='w-full h-[640px] mt-[80px] bg-[#656565] lg:h-[433px] lg:mt-[32px] md:mt-[40px] md:h-[203px]'></div>
       </div>
     </div>
   );
