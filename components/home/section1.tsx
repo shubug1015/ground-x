@@ -6,13 +6,15 @@ import { useEffect } from 'react';
 
 const Section1: NextPage = () => {
   useEffect(() => {
+    // window.onload = function () {
     AOS.init({
       duration: 3000,
     });
+    // };
   });
 
   return (
-    <div className='relative w-screen h-screen'>
+    <div className='relative w-screen h-screen bg-black'>
       {/* 전체 배경 이미지 */}
       <Image
         src='/home/section1/background.png'
