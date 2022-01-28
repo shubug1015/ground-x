@@ -63,10 +63,8 @@ const Section3: NextPage = () => {
   };
 
   useEffect(() => {
-    AOS.init({
-      duration: 3000,
-    });
-  });
+    AOS.init();
+  }, []);
   return (
     <div className='bg-[#f0f4fa] h-[660px] lg:h-[975px] md:h-[950px]'>
       <Slider

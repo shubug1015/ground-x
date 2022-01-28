@@ -29,10 +29,8 @@ const Section2: NextPage = () => {
   ];
 
   useEffect(() => {
-    AOS.init({
-      duration: 3000,
-    });
-  });
+    AOS.init();
+  }, []);
 
   return (
     <div className='relative flex w-screen h-screen lg:flex-col lg:h-auto'>
@@ -49,6 +47,7 @@ const Section2: NextPage = () => {
             className='group-hover:scale-110 transition-transform duration-300'
           />
 
+          {/* PC, Tabelt */}
           <div
             data-aos='fade-right'
             data-aos-delay={
@@ -61,7 +60,19 @@ const Section2: NextPage = () => {
                 : '1200'
             }
             data-aos-duration='1500'
-            className='text-center text-[32px] text-white font-medium whitespace-pre-wrap md:text-[20px] z-[10]'
+            className='text-center text-[32px] text-white font-medium whitespace-pre-wrap md:hidden'
+          >
+            {l.text}
+          </div>
+
+          {/* PC, Tabelt */}
+          <div
+            data-aos='fade-up'
+            data-aos-delay={
+              l.id === 0 ? '0' : l.id === 1 ? '200' : l.id === 2 ? '400' : '600'
+            }
+            data-aos-duration='1500'
+            className='hidden text-center text-[32px] text-white font-medium whitespace-pre-wrap md:block md:text-[20px] z-[10]'
           >
             {l.text}
           </div>

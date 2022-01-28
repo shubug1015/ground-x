@@ -39,10 +39,8 @@ const Section4: NextPage = () => {
   ];
 
   useEffect(() => {
-    AOS.init({
-      duration: 3000,
-    });
-  });
+    AOS.init();
+  }, []);
 
   return (
     <div className='flex justify-center'>

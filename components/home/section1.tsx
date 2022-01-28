@@ -6,12 +6,8 @@ import { useEffect } from 'react';
 
 const Section1: NextPage = () => {
   useEffect(() => {
-    window.onload = function () {
-      AOS.init({
-        duration: 3000,
-      });
-    };
-  });
+    AOS.init();
+  }, []);
 
   return (
     <div className='relative w-screen h-screen bg-black'>

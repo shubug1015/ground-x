@@ -6,10 +6,8 @@ import { useEffect } from 'react';
 
 const Section3: NextPage = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 3000,
-    });
-  });
+    AOS.init();
+  }, []);
   return (
     <div className='relative w-screen h-[1200px] bg-[#212731] pt-[177px] lg:flex lg:flex-col lg:items-center lg:h-auto lg:pt-[280px] lg:pb-[140px] md:pt-[180px] md:pb-[120px]'>
       {/* 상단 이미지 */}
