@@ -32,12 +32,12 @@ const Section1: NextPage = () => {
         className='!hidden lg:!block'
       />
 
-      <div className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center lg:items-start'>
+      <div className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col justify-center items-center lg:items-start'>
         {/* 메인 텍스트 이미지 */}
         <div
           data-aos='fade-up'
           data-aos-duration='1500'
-          className='relative max-w-[522px] w-[30vw] aspect-[1/0.533] lg:w-[560px] lg:h-[298.1px] md:w-[279px] md:h-[148.7px]'
+          className='relative w-[522px] h-[278.2px] lg:w-[560px] lg:h-[298.1px] md:w-[279px] md:h-[148.7px]'
         >
           <Image
             src='/home/section1/main-title.png'
