@@ -3,9 +3,12 @@ import Image from 'next/image';
 
 const Section2: NextPage = () => {
   return (
-    <div className='relative mt-[500px] flex justify-center items-start w-screen h-[2840px] lg:h-[3000px] lg:bg-black md:h-[1235px] md:mt-[500px]'>
+    <div
+      className='relative flex justify-center items-start w-screen h-[2840px] lg:h-[3000px] lg:bg-black md:h-[1235px]'
+      // className='relative mt-[500px] flex justify-center items-start w-screen h-[2840px] lg:h-[3000px] lg:bg-black md:h-[1235px] md:mt-[500px]'
+    >
       {/* Background Image */}
-      <div className='absolute top-0 left-0 w-full h-full lg:-top-[300px] md:-top-[250px]'>
+      <div className='absolute top-0 left-0 w-full h-full lg:-top-[300px] md:-top-[180px]'>
         <div className='relative w-full h-full'>
           <Image
             src='/home/section2/background.png'
@@ -19,7 +22,7 @@ const Section2: NextPage = () => {
 
       <div className='w-[1180px] z-[1] lg:w-[720px] md:w-[330px]'>
         {/* Title */}
-        <h1 className='text-center text-[28px] font-medium leading-[1.6] mt-[200px] md:text-[15px] md:leading-[1.8] md:mt-[0px]'>
+        <h1 className='text-center text-[28px] font-medium leading-[1.6] mt-[200px] md:text-[15px] md:leading-[1.8] md:mt-[60px]'>
           블록체인으로 당신의 창의성에 가치를 더하고,
           <br />
           디지털과 아날로그의 경계를 넘나들며,
@@ -88,7 +91,7 @@ const Section2: NextPage = () => {
         <div className='flex items-center w-full mt-[346px] lg:flex-col-reverse lg:mt-[150px] md:mt-[68px]'>
           <div className='w-1/2 text-white lg:w-full lg:pl-[160px] md:pl-0'>
             <div>
-              <div className='font-bold lg:mt-[60px] md:text-[14px]'>
+              <div className='font-bold lg:mt-[60px] md:text-[14px] md:mt-0'>
                 VISION
               </div>
 

@@ -8,12 +8,12 @@ const Section1: NextPage = () => {
 
   return (
     <div
-      className='absolute top-0 left-0 flex justify-center items-center w-screen h-screen z-10'
-      style={{
-        top: y > 465 ? -465 : -y,
-        opacity: y > 465 ? 0 : y === 0 ? 1 : (460 - y) / 460,
-      }}
-      // className='relative flex justify-center items-center w-screen h-screen'
+      // className='absolute top-0 left-0 flex justify-center items-center w-screen h-screen z-10'
+      // style={{
+      //   top: y > 465 ? -465 : -y,
+      //   opacity: y > 465 ? 0 : y === 0 ? 1 : (460 - y) / 460,
+      // }}
+      className='relative flex justify-center items-center w-screen h-screen z-[10]'
     >
       {/* Background Image */}
       <div className='absolute top-0 left-0 w-full h-full'>
