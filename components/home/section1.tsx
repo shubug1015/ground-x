@@ -6,11 +6,11 @@ import { useEffect } from 'react';
 
 const Section1: NextPage = () => {
   useEffect(() => {
-    // window.onload = function () {
-    AOS.init({
-      duration: 3000,
-    });
-    // };
+    window.onload = function () {
+      AOS.init({
+        duration: 3000,
+      });
+    };
   });
 
   return (
@@ -21,7 +21,7 @@ const Section1: NextPage = () => {
         alt='Main Background Image'
         layout='fill'
         objectFit='cover'
-        // priority
+        priority
         className='lg:!hidden'
       />
 
