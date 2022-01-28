@@ -95,7 +95,7 @@ const Section5: NextPage = () => {
               </div>
 
               {selectVideoOpen && (
-                <div className='absolute lg:w-[632px] md:w-[327px] lg:top-[68px] md:top-[55px] -left-px'>
+                <div className='absolute lg:w-[632px] md:w-[327px] lg:top-[68px] md:top-[55px] -left-px z-20'>
                   <div
                     onClick={() => selectVideo(0)}
                     className={cls(
@@ -137,7 +137,7 @@ const Section5: NextPage = () => {
               controls
               // autoPlay
               loop
-              className='mt-[80px] lg:h-[433px] lg:mt-[32px] md:mt-[40px] md:h-[203px]'
+              className='w-full h-[663.75px] mt-[80px] lg:h-[355.5px] lg:mt-[32px] md:mt-[40px] md:h-[183.94px]'
             >
               <source src='https://s3.ap-northeast-2.amazonaws.com/groundx.xyz/klip.mp4' />
             </video>
@@ -147,7 +147,7 @@ const Section5: NextPage = () => {
               controls
               // autoPlay
               loop
-              className='mt-[80px] lg:h-[433px] lg:mt-[32px] md:mt-[40px] md:h-[203px]'
+              className='w-full h-[663.75px] mt-[80px] lg:h-[355.5px] lg:mt-[32px] md:mt-[40px] md:h-[183.94px]'
             >
               <source src='https://s3.ap-northeast-2.amazonaws.com/groundx.xyz/klip-drops.mp4' />
             </video>
@@ -157,7 +157,7 @@ const Section5: NextPage = () => {
               controls
               // autoPlay
               loop
-              className='mt-[80px] lg:h-[433px] lg:mt-[32px] md:mt-[40px] md:h-[203px]'
+              className='w-full h-[663.75px] mt-[80px] lg:h-[355.5px] lg:mt-[32px] md:mt-[40px] md:h-[183.94px]'
             >
               <source src='https://s3.ap-northeast-2.amazonaws.com/groundx.xyz/klip-dev.mp4' />
             </video>
