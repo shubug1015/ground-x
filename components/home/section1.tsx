@@ -36,7 +36,7 @@ const Section1: NextPage = () => {
         {/* 메인 텍스트 이미지 */}
         <div
           data-aos='fade-up'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           className='relative w-[522px] h-[278.2px] lg:w-[560px] lg:h-[298.1px] md:w-[279px] md:h-[148.7px]'
         >
           <Image
@@ -51,7 +51,8 @@ const Section1: NextPage = () => {
         <div
           data-aos='fade-up'
           data-aos-duration='1500'
-          data-aos-delay='250'
+          data-aos-delay='300'
+          data-aos-offset='0'
           className='text-[24px] text-white font-medium mt-[44.4px] lg:text-[36px] lg:leading-[1.8] lg:mt-[60px] md:text-[18px] md:mt-[28px]'
         >
           그라운드엑스가 NFT로 <br className='hidden lg:block md:hidden' />
