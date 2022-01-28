@@ -32,7 +32,7 @@ const Section1: NextPage = () => {
         className='!hidden lg:!block'
       />
 
-      <div className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center lg:items-start md:-translate-y-[calc(50vw+100px)] bg-indigo-300'>
+      <div className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center lg:items-start'>
         {/* 메인 텍스트 이미지 */}
         <div
           data-aos='fade-up'
