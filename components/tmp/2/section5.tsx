@@ -16,12 +16,12 @@ const Section5: NextPage = () => {
   };
 
   return (
-    <div className='flex justify-center bg-[#212731]'>
-      <div className='w-[1180px] pt-[122px] pb-[180px] lg:w-[720px] md:w-screen md:flex md:flex-col md:items-center'>
+    <div className='flex justify-center'>
+      <div className='w-[1180px] pt-[218px] lg:w-[720px] md:w-screen md:flex md:flex-col md:items-center'>
         {/* Title & Select Buttons */}
         <div className='flex justify-between items-center w-full lg:flex-col lg:items-start md:w-[330px]'>
           {/* Title */}
-          <h1 className='font-medium text-[36px] text-white md:text-[28px]'>
+          <h1 className='font-medium text-[36px] md:text-[28px]'>
             그라운드엑스 크루 인터뷰
           </h1>
 
@@ -31,9 +31,9 @@ const Section5: NextPage = () => {
               onClick={() => selectVideo(0)}
               className={cls(
                 selectedVideo === 0
-                  ? 'bg-white text-black'
-                  : 'bg-transparent text-white',
-                'flex justify-center items-center border border-white w-[160px] h-[55px] font-medium transition-all cursor-pointer'
+                  ? 'bg-black text-white'
+                  : 'bg-white text-black',
+                'flex justify-center items-center border border-black w-[160px] h-[55px] font-medium transition-all cursor-pointer'
               )}
             >
               Klip Biz
@@ -43,9 +43,9 @@ const Section5: NextPage = () => {
               onClick={() => selectVideo(1)}
               className={cls(
                 selectedVideo === 1
-                  ? 'bg-white text-black'
-                  : 'bg-transparent text-white',
-                'flex justify-center items-center border border-white w-[160px] h-[55px] font-medium transition-all cursor-pointer'
+                  ? 'bg-black text-white'
+                  : 'bg-white text-black',
+                'flex justify-center items-center border border-black w-[160px] h-[55px] font-medium transition-all cursor-pointer'
               )}
             >
               Klip Drop
@@ -55,9 +55,9 @@ const Section5: NextPage = () => {
               onClick={() => selectVideo(2)}
               className={cls(
                 selectedVideo === 2
-                  ? 'bg-white text-black'
-                  : 'bg-transparent text-white',
-                'flex justify-center items-center border border-white w-[160px] h-[55px] font-medium transition-all cursor-pointer'
+                  ? 'bg-black text-white'
+                  : 'bg-white text-black',
+                'flex justify-center items-center border border-black w-[160px] h-[55px] font-medium transition-all cursor-pointer'
               )}
             >
               Klip Dev
@@ -130,7 +130,25 @@ const Section5: NextPage = () => {
         </div>
 
         {/* Video */}
-        <div className='w-full h-[640px] mt-[80px] bg-[#656565] lg:h-[400px] md:mt-[40px] md:h-[203px]'></div>
+        <div className='w-full h-[640px] mt-[80px] bg-[#cdcdcd] lg:h-[400px] md:mt-[40px] md:h-[203px]'></div>
+
+        {/* Text */}
+        <div className='flex space-x-[40px] mt-[40px] lg:flex-col lg:space-x-0 md:w-[330px] md:mt-[20px]'>
+          <div className='text-[24px] font-medium md:text-[20px]'>
+            {selectedVideo === 0
+              ? 'Klip Biz'
+              : selectedVideo === 1
+              ? 'Klip Drops Biz'
+              : 'Klip Dev'}
+          </div>
+
+          <div className='text-[18px] text-[#292e33] leading-[1.67] lg:mt-[20px] md:text-[16px] md:leading-[1.6] md:mt-[6px]'>
+            영상 내용에 따라 카피라이팅을 작성합니다. 영상 내용에 따라
+            카피라이팅을 작성합니다.
+            <br />
+            영상 내용에 따라 카피라이팅을 작성합니다.
+          </div>
+        </div>
       </div>
     </div>
   );

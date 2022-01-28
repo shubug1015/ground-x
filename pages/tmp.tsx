@@ -1,12 +1,11 @@
-import Seo from '@libs/seo';
 import type { NextPage } from 'next';
-import Section1 from '@components/tmp/section1';
-import Section2 from '@components/tmp/section2';
-import Section3 from '@components/tmp/section3';
-import Section4 from '@components/tmp/section4';
-import Section5 from '@components/tmp/section5';
-import Section6 from '@components/tmp/section6';
-import Section7 from '@components/tmp/section7';
+import Seo from '@libs/seo';
+import Section1 from '@components/tmp/2/section1';
+import Section2 from '@components/tmp/2/section2';
+import Section3 from '@components/tmp/2/section3';
+import Section4 from '@components/tmp/2/section4';
+import Section5 from '@components/tmp/2/section5';
+import Section6 from '@components/tmp/2/section6';
 
 const Tmp: NextPage = () => {
   return (
@@ -18,7 +17,6 @@ const Tmp: NextPage = () => {
       <Section4 />
       <Section5 />
       <Section6 />
-      <Section7 />
     </>
   );
 };
