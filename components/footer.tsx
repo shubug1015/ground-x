@@ -11,7 +11,7 @@ export default function Footer() {
         <div className='text-[#12161a] mt-[20px] md:text-[14px] md:mt-[16px]'>
           서울특별시 강남구 테헤란로98길 11 EG빌딩
           <br />
-          contact@groundx.xyz
+          Contact us: contact@groundx.xyz
         </div>
 
         <div className='flex justify-between items-center mt-[28px] md:mt-[20px] md:flex-col md:justify-center md:items-end'>
