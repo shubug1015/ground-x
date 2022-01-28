@@ -58,6 +58,7 @@ const Section4: NextPage = () => {
             <div
               key={l.id}
               data-aos='fade-up'
+              data-aos-duration='1500'
               data-aos-delay={l.id === 0 ? '0' : l.id === 1 ? '300' : '600'}
             >
               <div className='relative w-[380px] h-[280px] transition-all duration-300 group lg:w-[632px] lg:h-[433px] md:w-[327px] md:h-[224px]'>

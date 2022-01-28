@@ -28,6 +28,7 @@ const Section3: NextPage = () => {
       <div className='ml-[50%] lg:ml-0 lg:w-[632px] md:w-[327px]'>
         <div
           data-aos='fade-up'
+          data-aos-duration='1500'
           className='font-bold text-[#38a8fa] md:text-[14px]'
         >
           MISSION
@@ -35,6 +36,7 @@ const Section3: NextPage = () => {
 
         <h2
           data-aos='fade-up'
+          data-aos-duration='1500'
           data-aos-delay='300'
           className='text-white text-[36px] font-medium leading-[1.4] mt-[12px] lg:text-[32px] lg:mt-[8px] md:text-[28px] md:mt-[6px]'
         >
@@ -44,6 +46,7 @@ const Section3: NextPage = () => {
         {/* PC */}
         <div
           data-aos='fade-up'
+          data-aos-duration='1500'
           data-aos-delay='600'
           className='text-white text-[18px] leading-[1.56] mt-[20px] lg:hidden'
         >
@@ -61,6 +64,7 @@ const Section3: NextPage = () => {
         {/* Tablet */}
         <div
           data-aos='fade-up'
+          data-aos-duration='1500'
           data-aos-delay='600'
           className='hidden text-white text-[18px] leading-[1.56] mt-[20px] lg:block lg:text-[17.5px] md:hidden'
         >
@@ -79,6 +83,7 @@ const Section3: NextPage = () => {
         {/* Mobile */}
         <div
           data-aos='fade-up'
+          data-aos-duration='1500'
           data-aos-delay='600'
           className='hidden text-white leading-[1.6] mt-[20px] md:block'
         >
@@ -102,6 +107,7 @@ const Section3: NextPage = () => {
       <div className='ml-[calc(50vw-590px)] mt-[381px] lg:mt-[80px] lg:ml-0 lg:w-[632px] md:w-[327px]'>
         <div
           data-aos='fade-up'
+          data-aos-duration='1500'
           className='font-bold text-[#38a8fa] md:text-[14px]'
         >
           VISION
@@ -109,6 +115,7 @@ const Section3: NextPage = () => {
 
         <h2
           data-aos='fade-up'
+          data-aos-duration='1500'
           data-aos-delay='300'
           className='text-white text-[36px] font-medium leading-[1.4] mt-[12px] lg:text-[32px] lg:mt-[8px] md:text-[28px] md:mt-[6px]'
         >
@@ -118,6 +125,7 @@ const Section3: NextPage = () => {
 
         <div
           data-aos='fade-up'
+          data-aos-duration='1500'
           data-aos-delay='600'
           className='text-white text-[18px] leading-[1.56] mt-[20px] lg:hidden'
         >
@@ -131,6 +139,7 @@ const Section3: NextPage = () => {
 
         <div
           data-aos='fade-up'
+          data-aos-duration='1500'
           data-aos-delay='600'
           className='hidden text-white text-[17.5px] leading-[1.56] mt-[20px] lg:block md:hidden'
         >
@@ -145,6 +154,7 @@ const Section3: NextPage = () => {
 
         <div
           data-aos='fade-up'
+          data-aos-duration='1500'
           data-aos-delay='600'
           className='hidden text-white leading-[1.6] mt-[20px] md:block'
         >

@@ -97,6 +97,7 @@ const Section3: NextPage = () => {
                   <div>
                     <h1
                       data-aos='fade-left'
+                      data-aos-duration='1500'
                       className='text-[32px] leading-[1.4] md:text-[22px]'
                     >
                       “그라운드엑스는 성장 의지가 강한{' '}
@@ -108,6 +109,7 @@ const Section3: NextPage = () => {
                     {/* PC */}
                     <div
                       data-aos='fade-left'
+                      data-aos-duration='1500'
                       data-aos-delay='300'
                       className='text-[18px] text-[#333333] leading-[1.67] mt-[20px] lg:hidden md:text-[16px]'
                     >
@@ -132,6 +134,7 @@ const Section3: NextPage = () => {
                     {/* Tablet */}
                     <div
                       data-aos='fade-left'
+                      data-aos-duration='1500'
                       data-aos-delay='300'
                       className='hidden text-[17.5px] text-[#333333] leading-[1.67] mt-[20px] lg:block md:hidden'
                     >
@@ -154,6 +157,7 @@ const Section3: NextPage = () => {
                     {/* Mobile */}
                     <div
                       data-aos='fade-left'
+                      data-aos-duration='1500'
                       data-aos-delay='300'
                       className='hidden text-[16px] text-[#333333] leading-[1.67] mt-[20px] md:block'
                     >
