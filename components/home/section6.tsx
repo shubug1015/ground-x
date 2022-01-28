@@ -130,7 +130,7 @@ const Section5: NextPage = () => {
         </div>
 
         {/* Video */}
-        {/* <div className='lg:w-[632px] md:w-[327px]'>
+        <div className='lg:w-[632px] md:w-[327px]'>
           {selectedVideo === 0 ? (
             <video
               key='1'
@@ -139,7 +139,7 @@ const Section5: NextPage = () => {
               loop
               className='mt-[80px] lg:h-[433px] lg:mt-[32px] md:mt-[40px] md:h-[203px]'
             >
-              <source src='/video/klip.mp4' />
+              <source src='https://s3.ap-northeast-2.amazonaws.com/groundx.xyz/klip.mp4' />
             </video>
           ) : selectedVideo === 1 ? (
             <video
@@ -149,7 +149,7 @@ const Section5: NextPage = () => {
               loop
               className='w-full h-[640px] mt-[80px] bg-[#656565] lg:h-[433px] lg:mt-[32px] md:mt-[40px] md:h-[203px]'
             >
-              <source src='/video/klip-drops.mp4' />
+              <source src='https://s3.ap-northeast-2.amazonaws.com/groundx.xyz/klip-drops.mp4' />
             </video>
           ) : (
             <video
@@ -158,10 +158,10 @@ const Section5: NextPage = () => {
               loop
               className='w-full h-[640px] mt-[80px] bg-[#656565] lg:h-[433px] lg:mt-[32px] md:mt-[40px] md:h-[203px]'
             >
-              <source src='/video/klip-dev.mp4' />
+              <source src='https://s3.ap-northeast-2.amazonaws.com/groundx.xyz/klip-dev.mp4' />
             </video>
           )}
-        </div> */}
+        </div>
       </div>
     </div>
   );
