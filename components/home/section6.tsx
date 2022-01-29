@@ -48,7 +48,7 @@ const Section5: NextPage = () => {
                 'flex justify-center items-center border border-white w-[160px] h-[55px] font-medium transition-all cursor-pointer'
               )}
             >
-              Klip Drop
+              Klip Drops Biz
             </div>
 
             <div

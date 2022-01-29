@@ -79,8 +79,8 @@ const Section3: NextPage = () => {
             <div className='!w-[1180px] lg:!w-[632px] md:!w-[327px]'>
               <div key={index} className='flex items-center w-full lg:flex-col'>
                 {/* Image */}
-                <div className='w-1/2 lg:flex lg:justify-center lg:w-full md:pt-0'>
-                  <div className='relative w-[465px] h-[660px] lg:w-[302.25px] lg:h-[429px] md:w-[282.52px] md:h-[401px]'>
+                <div className='flex items-end w-1/2 h-[660px] lg:flex lg:justify-center lg:w-full lg:h-auto md:pt-0 '>
+                  <div className='relative w-[400px] h-[567.74px] lg:w-[302.25px] lg:h-[429px] md:w-[282.52px] md:h-[401px]'>
                     <Image
                       src='/home/section4/1.png'
                       alt='Setion3 Image1'
