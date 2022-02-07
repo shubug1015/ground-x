@@ -48,10 +48,10 @@ const Header = ({ section1Ref, section2Ref, section3Ref }: any) => {
     <div
       className={cls(
         y === 0 ? 'bg-transparent' : 'bg-white',
-        'fixed top-0 left-0 flex justify-center items-center w-screen h-[100px] border-b border-[#ffffff26] shadow-[0_4px_8px_0_rgba(0,0,0,0.04)] transition-all z-[9999] md:absolute md:shadow-none md:border-none md:h-[62px]'
+        'fixed top-0 left-0 flex justify-center items-center w-screen h-[100px] border-b border-[#ffffff26] shadow-[0_4px_8px_0_rgba(0,0,0,0.04)] transition-all z-[9999] md:h-[62px]'
       )}
     >
-      <div className='flex justify-between items-center w-[1180px] lg:w-[720px] md:w-[330px]'>
+      <div className='flex justify-between items-center w-[1180px] lg:w-[720px] md:w-[327px]'>
         {/* Logo */}
         <Link href='/'>
           <a
