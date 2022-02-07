@@ -93,9 +93,7 @@ const Section4: NextPage = ({ section2Ref }: any) => {
               <div className='text-[18px] font-medium text-[#999999] mt-[20px] lg:mt-[18px] md:text-[14px] md:mt-[12px]'>
                 {l.subtitle}
               </div>
-              <div className='text-[24px] font-bold mt-[4px] md:mt-0'>
-                {l.title}
-              </div>
+              <div className='text-[24px] font-bold md:mt-0'>{l.title}</div>
             </div>
           ))}
         </div>
