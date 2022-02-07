@@ -49,7 +49,7 @@ const Section2: NextPage = () => {
 
           {/* PC, Tabelt */}
           <div
-            data-aos='fade-right'
+            data-aos='fade-up'
             data-aos-delay={
               l.id === 0
                 ? '0'

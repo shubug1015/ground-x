@@ -8,10 +8,10 @@ module.exports = {
       '2xl': { max: '1535px' },
       // => @media (max-width: 1535px) { ... }
 
-      xl: { max: '1439px' },
+      xl: { max: '1279px' },
       // => @media (max-width: 1279px) { ... }
 
-      lg: { max: '1279px' },
+      lg: { max: '1179px' },
       // => @media (max-width: 1080px) { ... }
 
       md: { max: '767px' },
