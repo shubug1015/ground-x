@@ -59,7 +59,7 @@ const Section1: NextPage = () => {
       <div className='absolute bottom-[20px] left-1/2 -translate-x-1/2'>
         <div className='relative w-[48px] aspect-square animate-bounce'>
           <Image
-            src='/tmp/2/section1/arrow.png'
+            src='/home/section1/arrow.png'
             alt='Main Arrow Icon'
             layout='fill'
             objectFit='cover'
