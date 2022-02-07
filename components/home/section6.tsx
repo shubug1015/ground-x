@@ -138,7 +138,7 @@ const Section5: NextPage = ({ section3Ref }: any) => {
               // autoPlay
               loop
               playsInline
-              // poster='/favicon.png'
+              poster='/home/section6/thumbnail-1.png'
               className='w-full h-[663.75px] mt-[80px] lg:h-[355.5px] lg:mt-[32px] md:mt-[40px] md:h-[183.94px]'
             >
               <source src='https://s3.ap-northeast-2.amazonaws.com/groundx.xyz/klip.mp4' />

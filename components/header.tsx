@@ -123,7 +123,6 @@ const Header = ({ section1Ref, section2Ref, section3Ref }: any) => {
             <a
               className={cls(
                 y === 0 ? 'text-white' : 'text-black',
-                router.pathname === '/recruit' ? 'block' : 'hidden',
                 'lg:text-[17px] md:text-[16px] hover:text-[#38a8fa] ransition-colors duration-300 cursor-pointer'
               )}
             >
