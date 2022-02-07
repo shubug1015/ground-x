@@ -149,6 +149,8 @@ const Section5: NextPage = ({ section3Ref }: any) => {
               controls
               // autoPlay
               loop
+              playsInline
+              poster='/home/section6/thumbnail-2.png'
               className='w-full h-[663.75px] mt-[80px] lg:h-[355.5px] lg:mt-[32px] md:mt-[40px] md:h-[183.94px]'
             >
               <source src='https://s3.ap-northeast-2.amazonaws.com/groundx.xyz/klip-drops.mp4' />
@@ -159,6 +161,8 @@ const Section5: NextPage = ({ section3Ref }: any) => {
               controls
               // autoPlay
               loop
+              playsInline
+              poster='/home/section6/thumbnail-3.png'
               className='w-full h-[663.75px] mt-[80px] lg:h-[355.5px] lg:mt-[32px] md:mt-[40px] md:h-[183.94px]'
             >
               <source src='https://s3.ap-northeast-2.amazonaws.com/groundx.xyz/klip-dev.mp4' />

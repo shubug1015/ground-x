@@ -29,7 +29,7 @@ const Section2: NextPage = () => {
   ];
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({ once: true });
   }, []);
 
   return (
@@ -59,7 +59,8 @@ const Section2: NextPage = () => {
                 ? '800'
                 : '1200'
             }
-            data-aos-duration='1500'
+            data-aos-offset='0'
+            data-aos-duration='1000'
             className='text-center text-[32px] text-white font-medium whitespace-pre-wrap md:hidden'
           >
             {l.text}
@@ -71,7 +72,7 @@ const Section2: NextPage = () => {
             data-aos-delay={
               l.id === 0 ? '0' : l.id === 1 ? '200' : l.id === 2 ? '400' : '600'
             }
-            data-aos-duration='1500'
+            data-aos-duration='700'
             className='hidden text-center text-[32px] text-white font-medium whitespace-pre-wrap md:block md:text-[20px] z-[10]'
           >
             {l.text}

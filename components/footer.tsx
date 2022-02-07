@@ -19,8 +19,8 @@ export default function Footer() {
             ©GroundX Corp. All rights reserved.
           </div>
 
-          <div className='relative w-[105px] h-[20px] md:mt-[20px]'>
-            <Image src='/footer/kakao.png' alt='Kakao Logo' layout='fill' />
+          <div className='relative w-[125px] h-[20px] md:mt-[20px]'>
+            <Image src='/footer/kakao-1.png' alt='Kakao Logo' layout='fill' />
           </div>
         </div>
       </div>

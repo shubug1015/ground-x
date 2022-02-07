@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 const Section3: NextPage = ({ section1Ref }: any) => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({ once: true });
   }, []);
 
   return (
@@ -30,7 +30,7 @@ const Section3: NextPage = ({ section1Ref }: any) => {
       <div className='ml-[50%] lg:ml-0 lg:w-[632px] md:w-[327px]'>
         <div
           data-aos='fade-up'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           className='font-bold text-[#38a8fa] md:text-[14px]'
         >
           MISSION
@@ -38,7 +38,7 @@ const Section3: NextPage = ({ section1Ref }: any) => {
 
         <h2
           data-aos='fade-up'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           data-aos-delay='300'
           className='text-white text-[36px] font-medium leading-[1.4] mt-[12px] lg:text-[32px] lg:mt-[8px] md:text-[28px] md:mt-[6px]'
         >
@@ -48,7 +48,7 @@ const Section3: NextPage = ({ section1Ref }: any) => {
         {/* PC */}
         <div
           data-aos='fade-up'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           data-aos-delay='600'
           className='text-white text-[18px] leading-[1.56] mt-[20px] lg:hidden'
         >
@@ -66,7 +66,7 @@ const Section3: NextPage = ({ section1Ref }: any) => {
         {/* Tablet */}
         <div
           data-aos='fade-up'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           data-aos-delay='600'
           className='hidden text-white text-[18px] leading-[1.56] mt-[20px] lg:block lg:text-[17.5px] md:hidden'
         >
@@ -85,7 +85,7 @@ const Section3: NextPage = ({ section1Ref }: any) => {
         {/* Mobile */}
         <div
           data-aos='fade-up'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           data-aos-delay='600'
           className='hidden text-white leading-[1.6] mt-[20px] md:block'
         >
@@ -109,7 +109,7 @@ const Section3: NextPage = ({ section1Ref }: any) => {
       <div className='ml-[calc(50vw-590px)] mt-[381px] lg:mt-[80px] lg:ml-0 lg:w-[632px] md:w-[327px]'>
         <div
           data-aos='fade-up'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           className='font-bold text-[#38a8fa] md:text-[14px]'
         >
           VISION
@@ -117,7 +117,7 @@ const Section3: NextPage = ({ section1Ref }: any) => {
 
         <h2
           data-aos='fade-up'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           data-aos-delay='300'
           className='text-white text-[36px] font-medium leading-[1.4] mt-[12px] lg:text-[32px] lg:mt-[8px] md:text-[28px] md:mt-[6px]'
         >
@@ -127,7 +127,7 @@ const Section3: NextPage = ({ section1Ref }: any) => {
 
         <div
           data-aos='fade-up'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           data-aos-delay='600'
           className='text-white text-[18px] leading-[1.56] mt-[20px] lg:hidden'
         >
@@ -141,7 +141,7 @@ const Section3: NextPage = ({ section1Ref }: any) => {
 
         <div
           data-aos='fade-up'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           data-aos-delay='600'
           className='hidden text-white text-[17.5px] leading-[1.56] mt-[20px] lg:block md:hidden'
         >
@@ -156,7 +156,7 @@ const Section3: NextPage = ({ section1Ref }: any) => {
 
         <div
           data-aos='fade-up'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           data-aos-delay='600'
           className='hidden text-white leading-[1.6] mt-[20px] md:block'
         >

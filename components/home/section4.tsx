@@ -24,8 +24,8 @@ const Section3: NextPage = () => {
           {/* PC */}
           <div
             data-aos='fade-left'
-            data-aos-duration='1500'
-            data-aos-delay='300'
+            data-aos-duration='1000'
+            data-aos-delay='200'
             className='text-[18px] text-[#333333] leading-[1.67] mt-[20px] lg:hidden md:text-[16px]'
           >
             그라운드엑스에서 꼭 이뤄내고 싶은 일은 블록체인의 대중화입니다.
@@ -48,8 +48,8 @@ const Section3: NextPage = () => {
           {/* Tablet */}
           <div
             data-aos='fade-left'
-            data-aos-duration='1500'
-            data-aos-delay='300'
+            data-aos-duration='1000'
+            data-aos-delay='200'
             className='hidden text-[17.5px] text-[#333333] leading-[1.67] mt-[20px] lg:block md:hidden'
           >
             그라운드엑스에서 꼭 이뤄내고 싶은 일은 블록체인의 대중화입니다.
@@ -72,8 +72,8 @@ const Section3: NextPage = () => {
           {/* Mobile */}
           <div
             data-aos='fade-left'
-            data-aos-duration='1500'
-            data-aos-delay='300'
+            data-aos-duration='1000'
+            data-aos-delay='200'
             className='hidden text-[16px] text-[#333333] leading-[1.67] mt-[20px] md:block'
           >
             그라운드엑스에서 꼭 이뤄내고 싶은 일은
@@ -118,8 +118,8 @@ const Section3: NextPage = () => {
           {/* PC */}
           <div
             data-aos='fade-left'
-            data-aos-duration='1500'
-            data-aos-delay='300'
+            data-aos-duration='1000'
+            data-aos-delay='200'
             className='text-[18px] text-[#333333] leading-[1.67] mt-[20px] lg:hidden md:text-[16px]'
           >
             그라운드엑스는 성장 의지가 강한 크루들이 모여있습니다. 또한 다양한
@@ -143,8 +143,8 @@ const Section3: NextPage = () => {
           {/* Tablet */}
           <div
             data-aos='fade-left'
-            data-aos-duration='1500'
-            data-aos-delay='300'
+            data-aos-duration='1000'
+            data-aos-delay='200'
             className='hidden text-[17.5px] text-[#333333] leading-[1.67] mt-[20px] lg:block md:hidden'
           >
             그라운드엑스는 성장 의지가 강한 크루들이 모여있습니다. 또한 다양한
@@ -166,8 +166,8 @@ const Section3: NextPage = () => {
           {/* Mobile */}
           <div
             data-aos='fade-left'
-            data-aos-duration='1500'
-            data-aos-delay='300'
+            data-aos-duration='1000'
+            data-aos-delay='200'
             className='hidden text-[16px] text-[#333333] leading-[1.67] mt-[20px] md:block'
           >
             그라운드엑스는 성장 의지가 강한 크루들이 모여
@@ -249,7 +249,7 @@ const Section3: NextPage = () => {
   };
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({ once: true });
   }, []);
   return (
     <div className='bg-[#f0f4fa] h-[660px] lg:h-[975px] md:h-[1031px]'>
@@ -281,7 +281,7 @@ const Section3: NextPage = () => {
                   <div>
                     <h1
                       data-aos='fade-left'
-                      data-aos-duration='1500'
+                      data-aos-duration='1000'
                       className='text-[32px] leading-[1.4] md:text-[22px] lg:tracking-tight'
                     >
                       {l.title}

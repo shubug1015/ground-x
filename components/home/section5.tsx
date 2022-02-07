@@ -8,7 +8,7 @@ const Section4: NextPage = ({ section2Ref }: any) => {
   const list = [
     {
       id: 0,
-      imgUrl: '/home/section5/bg-1.png',
+      imgUrl: '/home/section5/frame-1.png',
       subtitle: 'Premium Art & Collectibles',
       title: 'Klip Drops',
       hoverText:
@@ -18,7 +18,7 @@ const Section4: NextPage = ({ section2Ref }: any) => {
     },
     {
       id: 1,
-      imgUrl: '/home/section5/bg-2.png',
+      imgUrl: '/home/section5/frame-2.png',
       subtitle: 'Simple & Secure Wallet',
       title: 'Klip',
       hoverText:
@@ -28,7 +28,7 @@ const Section4: NextPage = ({ section2Ref }: any) => {
     },
     {
       id: 2,
-      imgUrl: '/home/section5/bg-3.png',
+      imgUrl: '/home/section5/frame-3.png',
       subtitle: 'Optimal Choices For Your NFT Services',
       title: 'KAS',
       hoverText:
@@ -39,7 +39,7 @@ const Section4: NextPage = ({ section2Ref }: any) => {
   ];
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({ once: true });
   }, []);
 
   return (
@@ -56,7 +56,7 @@ const Section4: NextPage = ({ section2Ref }: any) => {
             <div
               key={l.id}
               data-aos='fade-up'
-              data-aos-duration='1500'
+              data-aos-duration='1000'
               data-aos-delay={l.id === 0 ? '0' : l.id === 1 ? '300' : '600'}
             >
               <div className='relative w-[380px] h-[280px] transition-all duration-300 group lg:w-[632px] lg:h-[433px] md:w-[327px] md:h-[224px]'>
