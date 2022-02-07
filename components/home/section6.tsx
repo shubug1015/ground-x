@@ -1,4 +1,5 @@
 import { cls } from '@libs/utils';
+import { klip, klipDev, klipDrops } from '@libs/video';
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -141,7 +142,7 @@ const Section5: NextPage = ({ section3Ref }: any) => {
               poster='/home/section6/thumbnail-1.png'
               className='w-full h-[663.75px] mt-[80px] lg:h-[355.5px] lg:mt-[32px] md:mt-[40px] md:h-[183.94px]'
             >
-              <source src='https://s3.ap-northeast-2.amazonaws.com/groundx.xyz/klip.mp4' />
+              <source src={klip} />
             </video>
           ) : selectedVideo === 1 ? (
             <video
@@ -153,7 +154,7 @@ const Section5: NextPage = ({ section3Ref }: any) => {
               poster='/home/section6/thumbnail-2.png'
               className='w-full h-[663.75px] mt-[80px] lg:h-[355.5px] lg:mt-[32px] md:mt-[40px] md:h-[183.94px]'
             >
-              <source src='https://s3.ap-northeast-2.amazonaws.com/groundx.xyz/klip-drops.mp4' />
+              <source src={klipDrops} />
             </video>
           ) : (
             <video
@@ -165,7 +166,7 @@ const Section5: NextPage = ({ section3Ref }: any) => {
               poster='/home/section6/thumbnail-3.png'
               className='w-full h-[663.75px] mt-[80px] lg:h-[355.5px] lg:mt-[32px] md:mt-[40px] md:h-[183.94px]'
             >
-              <source src='https://s3.ap-northeast-2.amazonaws.com/groundx.xyz/klip-dev.mp4' />
+              <source src={klipDev} />
             </video>
           )}
         </div>
