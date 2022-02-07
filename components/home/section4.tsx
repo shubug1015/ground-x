@@ -100,7 +100,7 @@ const Section3: NextPage = () => {
           </div>
         </>
       ),
-      signImgUrl: '/home/section4/sign-2-1.png',
+      signImgUrl: '/home/section4/sign-1-1.png',
       team: 'Nick, Product Team',
     },
     {
@@ -189,7 +189,7 @@ const Section3: NextPage = () => {
           </div>
         </>
       ),
-      signImgUrl: '/home/section4/sign-1.png',
+      signImgUrl: '/home/section4/sign-2-2.png',
       team: 'Kevin, Klip Drops Biz',
     },
   ];
@@ -206,7 +206,7 @@ const Section3: NextPage = () => {
       >
         <div className='relative w-[32px] h-[32px] md:w-[40px] md:h-[40px]'>
           <Image
-            src='/home/section4/arrow-left.png'
+            src='/home/section4/arrow-left-1.png'
             alt='Setion3 Left Arrow Icon'
             layout='fill'
           />
@@ -228,7 +228,7 @@ const Section3: NextPage = () => {
         >
           <div className='relative w-[32px] h-[32px] md:w-[40px] md:h-[40px]'>
             <Image
-              src='/home/section4/arrow-right.png'
+              src='/home/section4/arrow-right-1.png'
               alt='Setion3 Right Arrow Icon'
               layout='fill'
             />

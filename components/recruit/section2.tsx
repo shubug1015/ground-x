@@ -6,9 +6,12 @@ const Section2: NextPage = () => {
       <div className='w-[1180px] pt-[160px] pb-[120px] lg:w-[720px] lg:pt-[100px] lg:pb-[80px] md:w-[327px] md:pt-[80px] md:pb-[60px]'>
         {/* Title */}
         <h1 className='text-[#12161a] text-[36px] font-medium leading-[1.4] md:text-[28px]'>
-          아이디어를 마음껏 펼칠 <br className='hidden md:block' />수 있게,{' '}
+          아이디어를 마음껏
+          <br className='hidden md:block' /> 펼칠 수 있게,{' '}
           <br className='md:hidden' />
-          크루에게 아낌없는 보상과 지원을 합니다.
+          크루에게
+          <br className='hidden md:block' /> 아낌없는 보상과
+          <br className='hidden md:block' /> 지원을 합니다.
         </h1>
 
         {/* Section1 */}
@@ -65,8 +68,7 @@ const Section2: NextPage = () => {
               </div>
 
               <div className='text-[#292e33] leading-[1.6] mt-[20px] md:mt-[8px]'>
-                법정연차를 제외하고,
-                <br className='lg:hidden' />
+                법정연차를 제외하고, <br className='lg:hidden' />
                 연간 10일의 리프레쉬 <br className='hidden md:block' />
                 휴가를 <br className='lg:hidden' />
                 추가 부여합니다.
@@ -91,8 +93,7 @@ const Section2: NextPage = () => {
               </div>
 
               <div className='text-[#292e33] leading-[1.6] mt-[20px] md:mt-[8px]'>
-                직장 협약 어린이집으로,
-                <br className='lg:hidden' />
+                직장 협약 어린이집으로, <br className='lg:hidden' />
                 만 0세부터 5세반까지 <br className='hidden md:block' />
                 구성된 <br className='lg:hidden' />
                 특성화 프로그램을 운영합니다.

@@ -70,7 +70,7 @@ const Header = ({ section1Ref, section2Ref, section3Ref }: any) => {
               'relative w-[127px] h-[34px] md:w-[104px] md:h-[28px]'
             )}
           >
-            <Image src='/footer/logo.png' alt='Header Logo' layout='fill' />
+            <Image src='/header/logo-1.png' alt='Header Logo' layout='fill' />
           </a>
         </Link>
 
@@ -119,7 +119,7 @@ const Header = ({ section1Ref, section2Ref, section3Ref }: any) => {
           >
             인재채용
           </div>
-          <Link href='/recruit'>
+          <Link href='/'>
             <a
               className={cls(
                 y === 0 ? 'text-white' : 'text-black',
@@ -127,7 +127,7 @@ const Header = ({ section1Ref, section2Ref, section3Ref }: any) => {
                 'lg:text-[17px] md:text-[16px] hover:text-[#38a8fa] ransition-colors duration-300 cursor-pointer'
               )}
             >
-              채용안내
+              회사소개
             </a>
           </Link>
         </nav>

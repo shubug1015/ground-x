@@ -19,7 +19,7 @@ const Section7: NextPage = () => {
               </div>
               <div className='relative w-[22px] h-[16px] group-hover:translate-x-2 transition-all md:w-[16.5px] md:h-[12px]'>
                 <Image
-                  src='/home/section7/arrow-right-1.png'
+                  src='/home/section7/arrow-right.png'
                   alt='Right Arrow Icon'
                   layout='fill'
                 />

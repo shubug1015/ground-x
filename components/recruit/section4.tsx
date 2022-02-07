@@ -113,7 +113,7 @@ const Section4: NextPage = () => {
             <div key={qna.id} className='w-full border-b border-[#dae0e6]'>
               <div
                 onClick={() => handleQnaOpen(qna.id)}
-                className='flex justify-between pr-[10px] items-center text-[18px] font-medium py-[25px] my-[15px] hover:bg-[#f7f7f7] rounded-md transition-all cursor-pointer md:text-[16px] md:py-[14px] md:my-[10px]'
+                className='flex justify-between pr-[10px] items-center text-[18px] font-medium py-[25px] my-[15px] cursor-pointer md:text-[16px] md:py-[14px] md:my-[10px]'
               >
                 <div
                   className='lg:w-[580px] md:w-[290px]'
@@ -163,7 +163,7 @@ const Section4: NextPage = () => {
                   qna.open
                     ? 'visible opacity-100 mt-[21px] mb-[40px] h-auto'
                     : 'invisible opacity-0 h-0',
-                  'text-[#292e33] whitespace-pre-wrap transition-all md:text-[14px] md:whitespace-normal md:w-[320px]'
+                  'text-[#292e33] whitespace-pre-wrap transition-all duration-100 md:text-[14px] md:whitespace-normal md:w-[320px]'
                 )}
                 style={{ wordBreak: 'keep-all' }}
               >

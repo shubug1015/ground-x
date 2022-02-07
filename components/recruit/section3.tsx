@@ -223,8 +223,7 @@ const Section3: NextPage = () => {
                 </div>
                 <div className='leading-[1.4] lg:text-[20px] md:text-[16px]'>
                   현업에서 요청했을 경우에
-                  <br className='lg:hidden' />만 진행하며 생략될{' '}
-                  <br className='hidden md:block' />수 있음
+                  <br className='lg:hidden' />만 진행하며 생략될 수 있음
                 </div>
               </div>
             </div>

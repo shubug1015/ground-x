@@ -8,7 +8,7 @@ const Section4: NextPage = ({ section2Ref }: any) => {
   const list = [
     {
       id: 0,
-      imgUrl: '/home/section5/1.png',
+      imgUrl: '/home/section5/bg-1.png',
       subtitle: 'Premium Art & Collectibles',
       title: 'Klip Drops',
       hoverText:
@@ -18,7 +18,7 @@ const Section4: NextPage = ({ section2Ref }: any) => {
     },
     {
       id: 1,
-      imgUrl: '/home/section5/2.png',
+      imgUrl: '/home/section5/bg-2.png',
       subtitle: 'Simple & Secure Wallet',
       title: 'Klip',
       hoverText:
@@ -28,8 +28,8 @@ const Section4: NextPage = ({ section2Ref }: any) => {
     },
     {
       id: 2,
-      imgUrl: '/home/section5/3.png',
-      subtitle: 'Optimal Choices for your NFT Services',
+      imgUrl: '/home/section5/bg-3.png',
+      subtitle: 'Optimal Choices For Your NFT Services',
       title: 'KAS',
       hoverText:
         'Klaytn API Service,\nKAS는 블록체인 서비스를 더 쉽고 빠르게\n만들 수 있도록 블록체인 애플리케이션\n개발팀의 성공을 지원하는 서비스입니다.',
@@ -74,14 +74,14 @@ const Section4: NextPage = ({ section2Ref }: any) => {
                   </div>
                   <div
                     onClick={() => window.open(l.url)}
-                    className='flex justify-between items-center px-[20px] border border-[#ffffff] w-full h-[52px] mt-[40px] z-[1] cursor-pointer translate-y-5 group-hover:translate-y-0 transition-all duration-300 lg:mt-[80px] lg:h-[60px] md:mt-[30px] md:h-[50px]'
+                    className='flex justify-between items-center w-full h-[52px] mt-[40px] z-[1] cursor-pointer translate-y-5 group-hover:translate-y-0 transition-all duration-300 lg:mt-[80px] lg:h-[60px] md:mt-[30px] md:h-[50px]'
                   >
-                    <div className='text-white text-[14px] lg:text-[18px] md:text-[14px]'>
+                    <div className='text-white text-[16px] font-bold lg:text-[18px] md:text-[14px]'>
                       {l.hoverBtn}
                     </div>
-                    <div className='relative w-[18px] h-[18px] lg:w-[24px] lg:h-[24px] md:w-[18px] md:h-[18px]'>
+                    <div className='relative w-[22px] h-[15px] lg:w-[24px] lg:h-[24px] md:w-[18px] md:h-[18px]'>
                       <Image
-                        src='/tmp/2/section4/arrow-right.png'
+                        src='/home/section5/arrow-right.png'
                         alt='Right Arrow Icon'
                         layout='fill'
                       />
