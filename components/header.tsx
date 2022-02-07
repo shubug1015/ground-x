@@ -17,16 +17,12 @@ const Header = ({ section1Ref, section2Ref, section3Ref }: any) => {
       const refHeight = ref.current.getBoundingClientRect().height;
       const refOffsetTop = refTop + refHeight;
 
-      console.log(sectionNum, num);
-
       if (sectionNum !== num && refOffsetTop > 0 && refOffsetTop <= refHeight) {
-        console.log('1');
         setSectionNum(num);
       } else if (
         sectionNum === num &&
         (refOffsetTop > refHeight || refOffsetTop < 0)
       ) {
-        console.log('2');
         setSectionNum(null);
       }
     }
@@ -41,8 +37,6 @@ const Header = ({ section1Ref, section2Ref, section3Ref }: any) => {
     scrollIntoSection(section2Ref, 1);
     scrollIntoSection(section3Ref, 2);
   }, [y]);
-
-  // console.log(sectionNum);
 
   return (
     <div
