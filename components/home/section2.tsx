@@ -37,7 +37,7 @@ const Section2: NextPage = () => {
       {list.map((l) => (
         <div
           key={l.id}
-          className='relative w-1/4 h-full flex justify-center items-center lg:w-full lg:h-[360px] md:h-[220px] group'
+          className='relative w-1/4 h-full flex justify-center items-center bg-[#0000004d] lg:w-full lg:h-[360px] md:h-[220px] group'
         >
           <Image
             src={l.imgUrl}
@@ -65,7 +65,7 @@ const Section2: NextPage = () => {
             {l.text}
           </div>
 
-          {/* PC, Tabelt */}
+          {/* Mobile */}
           <div
             data-aos='fade-up'
             data-aos-delay={
@@ -77,7 +77,7 @@ const Section2: NextPage = () => {
             {l.text}
           </div>
 
-          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#0000004d] flex justify-center items-center ' />
+          {/* <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#0000004d] flex justify-center items-center ' /> */}
         </div>
       ))}
     </div>

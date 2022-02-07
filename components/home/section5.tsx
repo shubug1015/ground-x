@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
-const Section4: NextPage = () => {
+const Section4: NextPage = ({ section2Ref }: any) => {
   const list = [
     {
       id: 0,
@@ -43,7 +43,7 @@ const Section4: NextPage = () => {
   }, []);
 
   return (
-    <div className='flex justify-center'>
+    <div ref={section2Ref} className='flex justify-center'>
       <div className='w-[1180px] py-[120px] lg:w-[632px] lg:py-[80px] md:w-[327px] md:py-[60px]'>
         {/* Title */}
         <h1 className='font-medium text-[36px] md:text-left md:text-[28px] md:leading-[1.4]'>

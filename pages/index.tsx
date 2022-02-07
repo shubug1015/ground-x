@@ -8,16 +8,16 @@ import Section5 from '@components/home/section5';
 import Section6 from '@components/home/section6';
 import Section7 from '@components/home/section7';
 
-const Home: NextPage = () => {
+const Home: NextPage = ({ homeRef }: any) => {
   return (
     <>
       <Seo title='Home' />
       <Section1 />
       <Section2 />
-      <Section3 />
+      <Section3 {...homeRef} />
       <Section4 />
-      <Section5 />
-      <Section6 />
+      <Section5 {...homeRef} />
+      <Section6 {...homeRef} />
       <Section7 />
     </>
   );

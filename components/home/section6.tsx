@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import { useState } from 'react';
 
-const Section5: NextPage = () => {
+const Section5: NextPage = ({ section3Ref }: any) => {
   const [selectedVideo, setSelectedVideo] = useState(0);
   const [selectVideoOpen, setSelectVideoOpen] = useState(false);
 
@@ -16,7 +16,7 @@ const Section5: NextPage = () => {
   };
 
   return (
-    <div className='flex justify-center bg-[#212731]'>
+    <div ref={section3Ref} className='flex justify-center bg-[#212731]'>
       <div className='w-[1180px] pt-[122px] pb-[180px] lg:flex lg:flex-col lg:items-center lg:py-[80px] md:py-[60px] md:w-screen md:flex md:flex-col md:items-center'>
         {/* Title & Select Buttons */}
         <div className='flex justify-between items-center w-full lg:flex-col lg:items-start lg:w-[632px] md:w-[327px]'>

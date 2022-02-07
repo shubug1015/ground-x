@@ -11,7 +11,7 @@ const Section3: NextPage = () => {
   const list = [
     {
       id: 0,
-      profileImgUrl: '/home/section4/2.png',
+      profileImgUrl: '/home/section4/2-3.png',
       title: (
         <>
           “블록체인 대중화의 미래를 앞당기고

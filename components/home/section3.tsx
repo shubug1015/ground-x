@@ -4,12 +4,16 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
-const Section3: NextPage = () => {
+const Section3: NextPage = ({ section1Ref }: any) => {
   useEffect(() => {
     AOS.init();
   }, []);
+
   return (
-    <div className='relative w-screen h-[1200px] bg-[#212731] pt-[177px] lg:flex lg:flex-col lg:items-center lg:h-auto lg:pt-[280px] lg:pb-[140px] md:pt-[180px] md:pb-[120px]'>
+    <div
+      ref={section1Ref}
+      className='relative w-screen h-[1200px] bg-[#212731] pt-[177px] lg:flex lg:flex-col lg:items-center lg:h-auto lg:pt-[280px] lg:pb-[140px] md:pt-[180px] md:pb-[120px]'
+    >
       {/* 상단 이미지 */}
       <div className='absolute top-0 left-0'>
         <div className='relative w-[45vw] aspect-[1/0.714] md:w-[55vw]'>
