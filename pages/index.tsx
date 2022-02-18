@@ -7,6 +7,7 @@ import Section4 from '@components/home/section4';
 import Section5 from '@components/home/section5';
 import Section6 from '@components/home/section6';
 import Section7 from '@components/home/section7';
+import CeoMessage from '@components/home/ceoMessage';
 
 const Home: NextPage = ({ homeRef }: any) => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = ({ homeRef }: any) => {
       <Section1 />
       <Section2 />
       <Section3 {...homeRef} />
+      <CeoMessage />
       <Section4 />
       <Section5 {...homeRef} />
       <Section6 {...homeRef} />

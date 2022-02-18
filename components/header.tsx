@@ -17,16 +17,23 @@ const Header = ({ section1Ref, section2Ref, section3Ref }: any) => {
       const refHeight = ref.current.getBoundingClientRect().height;
       const refOffsetTop = refTop + refHeight;
 
-      if (sectionNum !== num && refOffsetTop > 0 && refOffsetTop <= refHeight) {
-        setSectionNum(num);
-      } else if (
-        sectionNum === num &&
-        (refOffsetTop > refHeight || refOffsetTop < 0)
+      // console.log(sectionNum, num, ': ', refOffsetTop, refHeight);
+
+      if (
+        // sectionNum !== num &&
+        refOffsetTop > 0 &&
+        refOffsetTop <= refHeight + 10
       ) {
+        // console.log(num, '1');
+        setSectionNum(num);
+      } else if (sectionNum === num && refOffsetTop > refHeight + 10) {
+        // console.log(num, '2');
         setSectionNum(null);
       }
     }
   }
+
+  // console.log(sectionNum);
 
   function moveToSection(ref: any): any {
     ref.current.scrollIntoView({ behavior: 'smooth' });
