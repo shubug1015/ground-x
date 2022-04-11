@@ -9,8 +9,6 @@ export default function Footer() {
         </div>
 
         <div className='text-[#12161a] mt-[20px] md:text-[14px] md:mt-[16px]'>
-          서울특별시 강남구 테헤란로98길 11 EG빌딩
-          <br />
           Contact us: contact@groundx.xyz
         </div>
 
